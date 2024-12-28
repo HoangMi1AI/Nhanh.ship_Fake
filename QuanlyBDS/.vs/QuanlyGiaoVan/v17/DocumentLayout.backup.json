@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,10 +61,6 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
@@ -83,8 +79,8 @@
               "Title": "FormTaoDonHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang.cs",
-              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs [Design]",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.cs [Design]",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs [Design]*",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T14:07:22.579Z",
               "EditorCaption": " [Design]"
@@ -95,9 +91,9 @@
               "Title": "FormTaoDonHang.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.Designer.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang.Designer.cs",
-              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.Designer.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.Designer.cs",
-              "ViewState": "AgIAADMDAAAAAAAAAAAgwEYDAAAtAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.Designer.cs*",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.Designer.cs*",
+              "ViewState": "AgIAAFUDAAAAAAAAAAAgwFUDAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T13:17:20.568Z",
               "EditorCaption": ""
@@ -108,12 +104,16 @@
               "Title": "FormTaoDonHang.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang.cs",
-              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs*",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.cs*",
               "ViewState": "AgIAAAcAAAAAAAAAAAApwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T13:29:21.558Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
