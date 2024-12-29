@@ -16,3 +16,4 @@ C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.pdb
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.genruntimeconfig.cache
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\ref\QuanlyGiaoVan.dll
+C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormQuanLyDonHang.resources
