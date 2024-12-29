@@ -10,8 +10,5 @@
     <Compile Update="FormTaoDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Tra cước.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

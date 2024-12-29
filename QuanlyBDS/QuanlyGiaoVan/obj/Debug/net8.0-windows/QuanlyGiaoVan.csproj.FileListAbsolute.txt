@@ -17,7 +17,6 @@ C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.genruntimeconfig.cache
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\ref\QuanlyGiaoVan.dll
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormQuanLyDonHang.resources
-C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.Tra_cước.resources
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\bin\Debug\net8.0-windows\Google.Protobuf.dll
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll

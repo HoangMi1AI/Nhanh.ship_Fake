@@ -29,16 +29,10 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            LBthoigianhenlay = new ListBox();
             label5 = new Label();
             label4 = new Label();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            listBox1 = new ListBox();
-            tabPage2 = new TabPage();
-            listBox2 = new ListBox();
-            tabPage3 = new TabPage();
-            listBox3 = new ListBox();
-            comboBox1 = new ComboBox();
+            cbThoigianhenlay = new ComboBox();
             textBox2 = new TextBox();
             groupBox2 = new GroupBox();
             label9 = new Label();
@@ -46,11 +40,11 @@
             label7 = new Label();
             label6 = new Label();
             comboBox4 = new ComboBox();
-            comboBox5 = new ComboBox();
-            comboBox2 = new ComboBox();
+            cboXa = new ComboBox();
+            cboDistricts = new ComboBox();
             textBox9 = new TextBox();
             textBox8 = new TextBox();
-            comboBox3 = new ComboBox();
+            cboProvinces = new ComboBox();
             textBox5 = new TextBox();
             groupBox3 = new GroupBox();
             button2 = new Button();
@@ -102,10 +96,6 @@
             textBox14 = new TextBox();
             textBox15 = new TextBox();
             groupBox1.SuspendLayout();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
-            tabPage3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -115,17 +105,28 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(LBthoigianhenlay);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(tabControl1);
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(cbThoigianhenlay);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Location = new Point(12, 24);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(535, 204);
+            groupBox1.Size = new Size(535, 239);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Người gửi";
+            // 
+            // LBthoigianhenlay
+            // 
+            LBthoigianhenlay.FormattingEnabled = true;
+            LBthoigianhenlay.ItemHeight = 25;
+            LBthoigianhenlay.Items.AddRange(new object[] { "Cả ngày", "Sáng (7h30 - 12h00)", "Chiều (13h30 - 18h00)", "Tối (18h30 - 21h00)" });
+            LBthoigianhenlay.Location = new Point(339, 122);
+            LBthoigianhenlay.Name = "LBthoigianhenlay";
+            LBthoigianhenlay.Size = new Size(182, 104);
+            LBthoigianhenlay.TabIndex = 0;
+            LBthoigianhenlay.Visible = false;
             // 
             // label5
             // 
@@ -147,96 +148,24 @@
             label4.TabIndex = 19;
             label4.Text = "Thông tin \r\nngười gửi";
             // 
-            // tabControl1
+            // cbThoigianhenlay
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
-            tabControl1.Location = new Point(159, 148);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(258, 154);
-            tabControl1.TabIndex = 4;
-            tabControl1.Visible = false;
-            // 
-            // tabPage1
-            // 
-            tabPage1.Controls.Add(listBox1);
-            tabPage1.Location = new Point(4, 34);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(250, 116);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Hôm nay";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Items.AddRange(new object[] { "Cả ngày", "Sáng (7h30 - 12h00)", "Chiều (13h30 - 18h00)", "Tối (18h30 - 21h00)" });
-            listBox1.Location = new Point(0, 0);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(250, 129);
-            listBox1.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(listBox2);
-            tabPage2.Location = new Point(4, 34);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(250, 116);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Ngày mai";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // listBox2
-            // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 25;
-            listBox2.Items.AddRange(new object[] { "Cả ngày", "Sáng (7h30 - 12h00)", "Chiều (13h30 - 18h00)", "Tối (18h30 - 21h00)" });
-            listBox2.Location = new Point(0, -6);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(250, 129);
-            listBox2.TabIndex = 1;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Controls.Add(listBox3);
-            tabPage3.Location = new Point(4, 34);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(250, 116);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Ngày kia";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // listBox3
-            // 
-            listBox3.FormattingEnabled = true;
-            listBox3.ItemHeight = 25;
-            listBox3.Items.AddRange(new object[] { "Cả ngày", "Sáng (7h30 - 12h00)", "Chiều (13h30 - 18h00)", "Tối (18h30 - 21h00)" });
-            listBox3.Location = new Point(0, -6);
-            listBox3.Name = "listBox3";
-            listBox3.Size = new Size(250, 129);
-            listBox3.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(159, 119);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(258, 33);
-            comboBox1.TabIndex = 3;
+            cbThoigianhenlay.FormattingEnabled = true;
+            cbThoigianhenlay.Items.AddRange(new object[] { "Hôm nay", "Ngày mai" });
+            cbThoigianhenlay.Location = new Point(159, 142);
+            cbThoigianhenlay.Name = "cbThoigianhenlay";
+            cbThoigianhenlay.Size = new Size(174, 33);
+            cbThoigianhenlay.TabIndex = 3;
+            cbThoigianhenlay.SelectedIndexChanged += thoigian_SelectedIndexChanged;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(159, 40);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Thông tin người gửi";
             textBox2.Size = new Size(258, 59);
             textBox2.TabIndex = 1;
-            textBox2.Text = "Thông tin người gửi";
             // 
             // groupBox2
             // 
@@ -245,11 +174,11 @@
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(comboBox4);
-            groupBox2.Controls.Add(comboBox5);
-            groupBox2.Controls.Add(comboBox2);
+            groupBox2.Controls.Add(cboXa);
+            groupBox2.Controls.Add(cboDistricts);
             groupBox2.Controls.Add(textBox9);
             groupBox2.Controls.Add(textBox8);
-            groupBox2.Controls.Add(comboBox3);
+            groupBox2.Controls.Add(cboProvinces);
             groupBox2.Controls.Add(textBox5);
             groupBox2.Location = new Point(12, 269);
             groupBox2.Name = "groupBox2";
@@ -308,59 +237,61 @@
             comboBox4.TabIndex = 11;
             comboBox4.Text = "Cả ngày";
             // 
-            // comboBox5
+            // cboXa
             // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(159, 302);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(136, 33);
-            comboBox5.TabIndex = 9;
-            comboBox5.Text = "Xã / Phường";
+            cboXa.FormattingEnabled = true;
+            cboXa.Location = new Point(159, 302);
+            cboXa.Name = "cboXa";
+            cboXa.Size = new Size(136, 33);
+            cboXa.TabIndex = 9;
+            cboXa.Text = "Xã / Phường";
             // 
-            // comboBox2
+            // cboDistricts
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(325, 252);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(146, 33);
-            comboBox2.TabIndex = 8;
-            comboBox2.Text = "Quận/ Huyện";
+            cboDistricts.FormattingEnabled = true;
+            cboDistricts.Location = new Point(325, 252);
+            cboDistricts.Name = "cboDistricts";
+            cboDistricts.Size = new Size(146, 33);
+            cboDistricts.TabIndex = 8;
+            cboDistricts.Text = "Quận/ Huyện";
+            cboDistricts.SelectedIndexChanged += cboDistricts_SelectedIndexChanged;
             // 
             // textBox9
             // 
             textBox9.Location = new Point(159, 104);
             textBox9.Multiline = true;
             textBox9.Name = "textBox9";
+            textBox9.PlaceholderText = "Họ tên người gửi";
             textBox9.Size = new Size(312, 33);
             textBox9.TabIndex = 7;
-            textBox9.Text = "Họ tên người gửi";
             // 
             // textBox8
             // 
             textBox8.Location = new Point(159, 200);
             textBox8.Multiline = true;
             textBox8.Name = "textBox8";
+            textBox8.PlaceholderText = "Nhập địa chỉ";
             textBox8.Size = new Size(312, 34);
             textBox8.TabIndex = 6;
-            textBox8.Text = "Nhập địa chỉ";
             // 
-            // comboBox3
+            // cboProvinces
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(159, 252);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(136, 33);
-            comboBox3.TabIndex = 5;
-            comboBox3.Text = "Tỉnh / Thành phố";
+            cboProvinces.FormattingEnabled = true;
+            cboProvinces.Location = new Point(159, 252);
+            cboProvinces.Name = "cboProvinces";
+            cboProvinces.Size = new Size(136, 33);
+            cboProvinces.TabIndex = 5;
+            cboProvinces.Text = "Tỉnh / Thành phố";
+            cboProvinces.SelectedIndexChanged += cboProvinces_SelectedIndexChanged;
             // 
             // textBox5
             // 
             textBox5.Location = new Point(159, 40);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
+            textBox5.PlaceholderText = "Số điện thoại";
             textBox5.Size = new Size(312, 38);
             textBox5.TabIndex = 1;
-            textBox5.Text = "Số điện thoại";
             // 
             // groupBox3
             // 
@@ -419,9 +350,9 @@
             textBox16.Location = new Point(180, 228);
             textBox16.Multiline = true;
             textBox16.Name = "textBox16";
+            textBox16.PlaceholderText = "Nhập mã khuyến mãi";
             textBox16.Size = new Size(312, 38);
             textBox16.TabIndex = 1;
-            textBox16.Text = "Nhập mã khuyến mãi";
             // 
             // textBox17
             // 
@@ -605,18 +536,18 @@
             textBox3.Location = new Point(209, 217);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "Trọng lượng";
             textBox3.Size = new Size(120, 34);
             textBox3.TabIndex = 21;
-            textBox3.Text = "Trọng lượng";
             // 
             // textBox1
             // 
             textBox1.Location = new Point(376, 217);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Giá trị";
             textBox1.Size = new Size(115, 34);
             textBox1.TabIndex = 20;
-            textBox1.Text = "Giá trị";
             // 
             // label10
             // 
@@ -633,9 +564,9 @@
             textBox12.Location = new Point(209, 159);
             textBox12.Multiline = true;
             textBox12.Name = "textBox12";
+            textBox12.PlaceholderText = "Nhập tên hàng hóa";
             textBox12.Size = new Size(282, 34);
             textBox12.TabIndex = 5;
-            textBox12.Text = "Nhập tên hàng hóa";
             // 
             // label3
             // 
@@ -785,18 +716,18 @@
             textBox11.Location = new Point(45, 290);
             textBox11.Multiline = true;
             textBox11.Name = "textBox11";
+            textBox11.PlaceholderText = "Nhập ghi chú";
             textBox11.Size = new Size(312, 56);
             textBox11.TabIndex = 1;
-            textBox11.Text = "Nhập ghi chú";
             // 
             // textBox13
             // 
             textBox13.Location = new Point(43, 164);
             textBox13.Multiline = true;
             textBox13.Name = "textBox13";
+            textBox13.PlaceholderText = "0";
             textBox13.Size = new Size(282, 40);
             textBox13.TabIndex = 0;
-            textBox13.Text = "0";
             // 
             // groupBox6
             // 
@@ -836,7 +767,6 @@
             label21.Size = new Size(113, 30);
             label21.TabIndex = 26;
             label21.Text = "Xác nhận ";
-            //label21.Click += label21_Click;
             // 
             // label20
             // 
@@ -901,10 +831,6 @@
             Text = "FormTaoDonHang";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
-            tabPage3.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
@@ -922,21 +848,15 @@
 
         private GroupBox groupBox1;
         private TextBox textBox2;
-        private ComboBox comboBox1;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private ListBox listBox1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
-        private ListBox listBox2;
-        private ListBox listBox3;
+        private ComboBox cbThoigianhenlay;
+        private ListBox LBthoigianhenlay;
         private GroupBox groupBox2;
-        private ComboBox comboBox3;
+        private ComboBox cboProvinces;
         private TextBox textBox5;
         private TextBox textBox8;
         private TextBox textBox9;
-        private ComboBox comboBox5;
-        private ComboBox comboBox2;
+        private ComboBox cboXa;
+        private ComboBox cboDistricts;
         private ComboBox comboBox4;
         private GroupBox groupBox3;
         private ComboBox comboBox6;
