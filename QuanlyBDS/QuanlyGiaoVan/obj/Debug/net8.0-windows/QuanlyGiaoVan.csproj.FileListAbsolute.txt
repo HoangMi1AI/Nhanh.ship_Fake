@@ -32,3 +32,4 @@ C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\bin\Debug\net
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.csproj.AssemblyReference.cache
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGi.E3040976.Up2Date
+C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormTaoDonHang2.resources

@@ -41,10 +41,22 @@ namespace QuanlyGiaoVan
         }
         private void thoigian_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cbThoigianhenlay.Text != "")
+            if (cbThoigianhenlay.Text != "")
             {
                 LBthoigianhenlay.Visible = true;
             }
+        }
+
+        private void btnNextpageTaoDon_Click(object sender, EventArgs e)
+        {
+            // Tạo một instance của form kế tiếp
+            FormTaoDonHang2 formtaodonhang2 = new FormTaoDonHang2();
+
+            // Hiển thị form tiếp theo
+            formtaodonhang2.Show();
+
+            // Đóng form hiện tại nếu cần
+            this.Hide();
         }
     }
 }
