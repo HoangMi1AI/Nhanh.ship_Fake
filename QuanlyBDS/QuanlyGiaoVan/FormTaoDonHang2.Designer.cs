@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             groupBox6 = new GroupBox();
-            button4 = new Button();
+            btnConfirm = new Button();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
@@ -37,7 +37,7 @@
             textBox7 = new TextBox();
             textBox14 = new TextBox();
             textBox15 = new TextBox();
-            groupBox5 = new GroupBox();
+            gbTienThuHo = new GroupBox();
             checkBox8 = new CheckBox();
             label18 = new Label();
             checkBox7 = new CheckBox();
@@ -48,20 +48,20 @@
             textBox11 = new TextBox();
             textBox13 = new TextBox();
             groupBox3 = new GroupBox();
-            button2 = new Button();
+            btnTraCuoc = new Button();
             button1 = new Button();
-            comboBox6 = new ComboBox();
+            cbDonViVanChuyen = new ComboBox();
             textBox10 = new TextBox();
             textBox16 = new TextBox();
             textBox17 = new TextBox();
             groupBox6.SuspendLayout();
-            groupBox5.SuspendLayout();
+            gbTienThuHo.SuspendLayout();
             groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(button4);
+            groupBox6.Controls.Add(btnConfirm);
             groupBox6.Controls.Add(label21);
             groupBox6.Controls.Add(label20);
             groupBox6.Controls.Add(label19);
@@ -77,16 +77,17 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Xác nhận";
             // 
-            // button4
+            // btnConfirm
             // 
-            button4.Font = new Font("Segoe UI", 10F);
-            button4.ForeColor = Color.Red;
-            button4.Location = new Point(469, 245);
-            button4.Name = "button4";
-            button4.Size = new Size(160, 39);
-            button4.TabIndex = 37;
-            button4.Text = "Gửi Ngay";
-            button4.UseVisualStyleBackColor = true;
+            btnConfirm.Font = new Font("Segoe UI", 10F);
+            btnConfirm.ForeColor = Color.Red;
+            btnConfirm.Location = new Point(469, 245);
+            btnConfirm.Name = "btnConfirm";
+            btnConfirm.Size = new Size(160, 39);
+            btnConfirm.TabIndex = 37;
+            btnConfirm.Text = "Gửi Ngay";
+            btnConfirm.UseVisualStyleBackColor = true;
+            btnConfirm.Click += btnConfirm_Click;
             // 
             // label21
             // 
@@ -155,23 +156,23 @@
             textBox15.TabIndex = 0;
             textBox15.Text = "Khuyến mãi\r\n";
             // 
-            // groupBox5
+            // gbTienThuHo
             // 
-            groupBox5.Controls.Add(checkBox8);
-            groupBox5.Controls.Add(label18);
-            groupBox5.Controls.Add(checkBox7);
-            groupBox5.Controls.Add(radioButton3);
-            groupBox5.Controls.Add(radioButton4);
-            groupBox5.Controls.Add(label17);
-            groupBox5.Controls.Add(label16);
-            groupBox5.Controls.Add(textBox11);
-            groupBox5.Controls.Add(textBox13);
-            groupBox5.Location = new Point(605, 12);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(523, 357);
-            groupBox5.TabIndex = 27;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Tiền thu hộ";
+            gbTienThuHo.Controls.Add(checkBox8);
+            gbTienThuHo.Controls.Add(label18);
+            gbTienThuHo.Controls.Add(checkBox7);
+            gbTienThuHo.Controls.Add(radioButton3);
+            gbTienThuHo.Controls.Add(radioButton4);
+            gbTienThuHo.Controls.Add(label17);
+            gbTienThuHo.Controls.Add(label16);
+            gbTienThuHo.Controls.Add(textBox11);
+            gbTienThuHo.Controls.Add(textBox13);
+            gbTienThuHo.Location = new Point(605, 12);
+            gbTienThuHo.Name = "gbTienThuHo";
+            gbTienThuHo.Size = new Size(523, 357);
+            gbTienThuHo.TabIndex = 27;
+            gbTienThuHo.TabStop = false;
+            gbTienThuHo.Text = "Tiền thu hộ";
             // 
             // checkBox8
             // 
@@ -266,9 +267,9 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(button2);
+            groupBox3.Controls.Add(btnTraCuoc);
             groupBox3.Controls.Add(button1);
-            groupBox3.Controls.Add(comboBox6);
+            groupBox3.Controls.Add(cbDonViVanChuyen);
             groupBox3.Controls.Add(textBox10);
             groupBox3.Controls.Add(textBox16);
             groupBox3.Controls.Add(textBox17);
@@ -279,14 +280,15 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Chọn đơn vị giao vận";
             // 
-            // button2
+            // btnTraCuoc
             // 
-            button2.Location = new Point(180, 290);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 34);
-            button2.TabIndex = 13;
-            button2.Text = "Bảng giá";
-            button2.UseVisualStyleBackColor = true;
+            btnTraCuoc.Location = new Point(180, 290);
+            btnTraCuoc.Name = "btnTraCuoc";
+            btnTraCuoc.Size = new Size(125, 34);
+            btnTraCuoc.TabIndex = 13;
+            btnTraCuoc.Text = "Bảng giá";
+            btnTraCuoc.UseVisualStyleBackColor = true;
+            btnTraCuoc.Click += btnTraCuoc_Click;
             // 
             // button1
             // 
@@ -297,15 +299,15 @@
             button1.Text = "Gợi ý đơn vị vận chuyển";
             button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox6
+            // cbDonViVanChuyen
             // 
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "- Giao Hàng Nhanh (GHN)  ", "- Giao Hàng Tiết Kiệm (GHTK)  ", "- Viettel Post  ", "- VNPost (Bưu điện Việt Nam)  ", "- AhaMove  ", "- Lalamove  ", "- J&T Express  ", "- Shopee Express  ", "- Ninja Van  ", "- BEST Express  ", "- Kerry Express  ", "- NowShip  ", "- GrabExpress  ", "- DHL Express  ", "- FedEx Vietnam  " });
-            comboBox6.Location = new Point(180, 142);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(312, 33);
-            comboBox6.TabIndex = 11;
-            comboBox6.Text = "ManhNguyen.ship";
+            cbDonViVanChuyen.FormattingEnabled = true;
+            cbDonViVanChuyen.Items.AddRange(new object[] { "- Giao Hàng Nhanh (GHN)  ", "- Giao Hàng Tiết Kiệm (GHTK)  ", "- Viettel Post  ", "- VNPost (Bưu điện Việt Nam)  ", "- AhaMove  ", "- Lalamove  ", "- J&T Express  ", "- Shopee Express  ", "- Ninja Van  ", "- BEST Express  ", "- Kerry Express  ", "- NowShip  ", "- GrabExpress  ", "- DHL Express  ", "- FedEx Vietnam  " });
+            cbDonViVanChuyen.Location = new Point(180, 142);
+            cbDonViVanChuyen.Name = "cbDonViVanChuyen";
+            cbDonViVanChuyen.Size = new Size(312, 33);
+            cbDonViVanChuyen.TabIndex = 11;
+            cbDonViVanChuyen.Text = "ManhNguyen.ship";
             // 
             // textBox10
             // 
@@ -340,14 +342,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 691);
             Controls.Add(groupBox6);
-            Controls.Add(groupBox5);
+            Controls.Add(gbTienThuHo);
             Controls.Add(groupBox3);
             Name = "FormTaoDonHang2";
             Text = "FormTaoDonHang2";
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
+            gbTienThuHo.ResumeLayout(false);
+            gbTienThuHo.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ResumeLayout(false);
@@ -356,7 +358,7 @@
         #endregion
 
         private GroupBox groupBox6;
-        private Button button4;
+        private Button btnConfirm;
         private Label label21;
         private Label label20;
         private Label label19;
@@ -364,7 +366,7 @@
         private TextBox textBox7;
         private TextBox textBox14;
         private TextBox textBox15;
-        private GroupBox groupBox5;
+        private GroupBox gbTienThuHo;
         private CheckBox checkBox8;
         private Label label18;
         private CheckBox checkBox7;
@@ -375,9 +377,9 @@
         private TextBox textBox11;
         private TextBox textBox13;
         private GroupBox groupBox3;
-        private Button button2;
+        private Button btnTraCuoc;
         private Button button1;
-        private ComboBox comboBox6;
+        private ComboBox cbDonViVanChuyen;
         private TextBox textBox10;
         private TextBox textBox16;
         private TextBox textBox17;
