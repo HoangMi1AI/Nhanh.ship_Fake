@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace QuanlyGiaoVan
 {
     internal class ClassTaodonhang
@@ -19,4 +18,14 @@ namespace QuanlyGiaoVan
             return new MySqlConnection(connectionString);
         }
     }
+
+
+
+
+
+
+
+
+
 }
+

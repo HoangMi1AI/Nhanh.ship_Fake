@@ -13,7 +13,7 @@
     <Compile Update="FormTaoDonHang2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormTracuoc.cs">
+    <Compile Update="FormTraCuoc.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

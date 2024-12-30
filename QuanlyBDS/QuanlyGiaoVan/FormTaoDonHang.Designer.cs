@@ -39,14 +39,14 @@
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
-            comboBox4 = new ComboBox();
+            cbTgHenGiao = new ComboBox();
             cboXa = new ComboBox();
             cboDistricts = new ComboBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
+            txtHoTenNguoiNhan = new TextBox();
+            txtDiaChiNguoiNhan = new TextBox();
             cboProvinces = new ComboBox();
-            textBox5 = new TextBox();
-            groupBox4 = new GroupBox();
+            txtSDTnguoiNhan = new TextBox();
+            gbTThangHoa = new GroupBox();
             checkBox6 = new CheckBox();
             checkBox5 = new CheckBox();
             checkBox4 = new CheckBox();
@@ -59,11 +59,11 @@
             textBox4 = new TextBox();
             label13 = new Label();
             label11 = new Label();
-            button3 = new Button();
-            textBox3 = new TextBox();
-            textBox1 = new TextBox();
+            btnThemHangHoa = new Button();
+            txtTrongLuong1 = new TextBox();
+            txtGiaTri = new TextBox();
             label10 = new Label();
-            textBox12 = new TextBox();
+            txtTenHang1 = new TextBox();
             label3 = new Label();
             label2 = new Label();
             radioButton2 = new RadioButton();
@@ -72,7 +72,7 @@
             btnNextpageTaoDon = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            groupBox4.SuspendLayout();
+            gbTThangHoa.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -148,13 +148,13 @@
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(comboBox4);
+            groupBox2.Controls.Add(cbTgHenGiao);
             groupBox2.Controls.Add(cboXa);
             groupBox2.Controls.Add(cboDistricts);
-            groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(textBox8);
+            groupBox2.Controls.Add(txtHoTenNguoiNhan);
+            groupBox2.Controls.Add(txtDiaChiNguoiNhan);
             groupBox2.Controls.Add(cboProvinces);
-            groupBox2.Controls.Add(textBox5);
+            groupBox2.Controls.Add(txtSDTnguoiNhan);
             groupBox2.Font = new Font("Segoe UI", 10F);
             groupBox2.Location = new Point(12, 269);
             groupBox2.Name = "groupBox2";
@@ -203,15 +203,15 @@
             label6.TabIndex = 21;
             label6.Text = "Điện thoại";
             // 
-            // comboBox4
+            // cbTgHenGiao
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "Cả ngày", "Sáng (7h30 - 12h00)", "Chiều (13h30 - 18h00)", "Tối (18h30 - 21h00)", "Giờ hành chính", "Chủ nhật", "Ngày nghỉ lễ" });
-            comboBox4.Location = new Point(159, 357);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(312, 36);
-            comboBox4.TabIndex = 11;
-            comboBox4.Text = "Cả ngày";
+            cbTgHenGiao.FormattingEnabled = true;
+            cbTgHenGiao.Items.AddRange(new object[] { "Cả ngày", "Sáng (7h30 - 12h00)", "Chiều (13h30 - 18h00)", "Tối (18h30 - 21h00)", "Giờ hành chính", "Chủ nhật", "Ngày nghỉ lễ" });
+            cbTgHenGiao.Location = new Point(159, 357);
+            cbTgHenGiao.Name = "cbTgHenGiao";
+            cbTgHenGiao.Size = new Size(312, 36);
+            cbTgHenGiao.TabIndex = 11;
+            cbTgHenGiao.Text = "Cả ngày";
             // 
             // cboXa
             // 
@@ -234,23 +234,23 @@
             cboDistricts.Text = "Quận/ Huyện";
             cboDistricts.SelectedIndexChanged += cboDistricts_SelectedIndexChanged;
             // 
-            // textBox9
+            // txtHoTenNguoiNhan
             // 
-            textBox9.Location = new Point(159, 104);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.PlaceholderText = "Họ tên người gửi";
-            textBox9.Size = new Size(312, 33);
-            textBox9.TabIndex = 7;
+            txtHoTenNguoiNhan.Location = new Point(159, 104);
+            txtHoTenNguoiNhan.Multiline = true;
+            txtHoTenNguoiNhan.Name = "txtHoTenNguoiNhan";
+            txtHoTenNguoiNhan.PlaceholderText = "Họ tên người nhận";
+            txtHoTenNguoiNhan.Size = new Size(312, 33);
+            txtHoTenNguoiNhan.TabIndex = 7;
             // 
-            // textBox8
+            // txtDiaChiNguoiNhan
             // 
-            textBox8.Location = new Point(159, 175);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.PlaceholderText = "Nhập địa chỉ";
-            textBox8.Size = new Size(312, 34);
-            textBox8.TabIndex = 6;
+            txtDiaChiNguoiNhan.Location = new Point(159, 175);
+            txtDiaChiNguoiNhan.Multiline = true;
+            txtDiaChiNguoiNhan.Name = "txtDiaChiNguoiNhan";
+            txtDiaChiNguoiNhan.PlaceholderText = "Nhập địa chỉ";
+            txtDiaChiNguoiNhan.Size = new Size(312, 34);
+            txtDiaChiNguoiNhan.TabIndex = 6;
             // 
             // cboProvinces
             // 
@@ -263,46 +263,46 @@
             cboProvinces.Text = "Tỉnh / Thành phố";
             cboProvinces.SelectedIndexChanged += cboProvinces_SelectedIndexChanged;
             // 
-            // textBox5
+            // txtSDTnguoiNhan
             // 
-            textBox5.Location = new Point(159, 40);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Số điện thoại";
-            textBox5.Size = new Size(312, 38);
-            textBox5.TabIndex = 1;
+            txtSDTnguoiNhan.Location = new Point(159, 40);
+            txtSDTnguoiNhan.Multiline = true;
+            txtSDTnguoiNhan.Name = "txtSDTnguoiNhan";
+            txtSDTnguoiNhan.PlaceholderText = "Số điện thoại";
+            txtSDTnguoiNhan.Size = new Size(312, 38);
+            txtSDTnguoiNhan.TabIndex = 1;
             // 
-            // groupBox4
+            // gbTThangHoa
             // 
-            groupBox4.Controls.Add(checkBox6);
-            groupBox4.Controls.Add(checkBox5);
-            groupBox4.Controls.Add(checkBox4);
-            groupBox4.Controls.Add(checkBox3);
-            groupBox4.Controls.Add(checkBox2);
-            groupBox4.Controls.Add(checkBox1);
-            groupBox4.Controls.Add(label15);
-            groupBox4.Controls.Add(label14);
-            groupBox4.Controls.Add(textBox6);
-            groupBox4.Controls.Add(textBox4);
-            groupBox4.Controls.Add(label13);
-            groupBox4.Controls.Add(label11);
-            groupBox4.Controls.Add(button3);
-            groupBox4.Controls.Add(textBox3);
-            groupBox4.Controls.Add(textBox1);
-            groupBox4.Controls.Add(label10);
-            groupBox4.Controls.Add(textBox12);
-            groupBox4.Controls.Add(label3);
-            groupBox4.Controls.Add(label2);
-            groupBox4.Controls.Add(radioButton2);
-            groupBox4.Controls.Add(radioButton1);
-            groupBox4.Controls.Add(label1);
-            groupBox4.Font = new Font("Sitka Subheading", 10F);
-            groupBox4.Location = new Point(564, 24);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(521, 671);
-            groupBox4.TabIndex = 14;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Thông tin hàng hóa";
+            gbTThangHoa.Controls.Add(checkBox6);
+            gbTThangHoa.Controls.Add(checkBox5);
+            gbTThangHoa.Controls.Add(checkBox4);
+            gbTThangHoa.Controls.Add(checkBox3);
+            gbTThangHoa.Controls.Add(checkBox2);
+            gbTThangHoa.Controls.Add(checkBox1);
+            gbTThangHoa.Controls.Add(label15);
+            gbTThangHoa.Controls.Add(label14);
+            gbTThangHoa.Controls.Add(textBox6);
+            gbTThangHoa.Controls.Add(textBox4);
+            gbTThangHoa.Controls.Add(label13);
+            gbTThangHoa.Controls.Add(label11);
+            gbTThangHoa.Controls.Add(btnThemHangHoa);
+            gbTThangHoa.Controls.Add(txtTrongLuong1);
+            gbTThangHoa.Controls.Add(txtGiaTri);
+            gbTThangHoa.Controls.Add(label10);
+            gbTThangHoa.Controls.Add(txtTenHang1);
+            gbTThangHoa.Controls.Add(label3);
+            gbTThangHoa.Controls.Add(label2);
+            gbTThangHoa.Controls.Add(radioButton2);
+            gbTThangHoa.Controls.Add(radioButton1);
+            gbTThangHoa.Controls.Add(label1);
+            gbTThangHoa.Font = new Font("Sitka Subheading", 10F);
+            gbTThangHoa.Location = new Point(564, 24);
+            gbTThangHoa.Name = "gbTThangHoa";
+            gbTThangHoa.Size = new Size(521, 671);
+            gbTThangHoa.TabIndex = 14;
+            gbTThangHoa.TabStop = false;
+            gbTThangHoa.Text = "Thông tin hàng hóa";
             // 
             // checkBox6
             // 
@@ -424,34 +424,34 @@
             label11.TabIndex = 23;
             label11.Text = "Tổng khối lượng";
             // 
-            // button3
+            // btnThemHangHoa
             // 
-            button3.Font = new Font("Segoe UI", 10F);
-            button3.ForeColor = Color.Red;
-            button3.Location = new Point(209, 282);
-            button3.Name = "button3";
-            button3.Size = new Size(160, 39);
-            button3.TabIndex = 22;
-            button3.Text = "Thêm hàng hóa";
-            button3.UseVisualStyleBackColor = true;
+            btnThemHangHoa.Font = new Font("Segoe UI", 10F);
+            btnThemHangHoa.ForeColor = Color.Red;
+            btnThemHangHoa.Location = new Point(209, 282);
+            btnThemHangHoa.Name = "btnThemHangHoa";
+            btnThemHangHoa.Size = new Size(160, 39);
+            btnThemHangHoa.TabIndex = 22;
+            btnThemHangHoa.Text = "Thêm hàng hóa";
+            btnThemHangHoa.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtTrongLuong1
             // 
-            textBox3.Location = new Point(209, 217);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Trọng lượng";
-            textBox3.Size = new Size(120, 34);
-            textBox3.TabIndex = 21;
+            txtTrongLuong1.Location = new Point(209, 217);
+            txtTrongLuong1.Multiline = true;
+            txtTrongLuong1.Name = "txtTrongLuong1";
+            txtTrongLuong1.PlaceholderText = "Trọng lượng";
+            txtTrongLuong1.Size = new Size(120, 34);
+            txtTrongLuong1.TabIndex = 21;
             // 
-            // textBox1
+            // txtGiaTri
             // 
-            textBox1.Location = new Point(376, 217);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Giá trị";
-            textBox1.Size = new Size(115, 34);
-            textBox1.TabIndex = 20;
+            txtGiaTri.Location = new Point(376, 217);
+            txtGiaTri.Multiline = true;
+            txtGiaTri.Name = "txtGiaTri";
+            txtGiaTri.PlaceholderText = "Giá trị";
+            txtGiaTri.Size = new Size(115, 34);
+            txtGiaTri.TabIndex = 20;
             // 
             // label10
             // 
@@ -463,14 +463,14 @@
             label10.TabIndex = 19;
             label10.Text = "___________________________________________________________________";
             // 
-            // textBox12
+            // txtTenHang1
             // 
-            textBox12.Location = new Point(209, 159);
-            textBox12.Multiline = true;
-            textBox12.Name = "textBox12";
-            textBox12.PlaceholderText = "Nhập tên hàng hóa";
-            textBox12.Size = new Size(282, 34);
-            textBox12.TabIndex = 5;
+            txtTenHang1.Location = new Point(209, 159);
+            txtTenHang1.Multiline = true;
+            txtTenHang1.Name = "txtTenHang1";
+            txtTenHang1.PlaceholderText = "Nhập tên hàng hóa";
+            txtTenHang1.Size = new Size(282, 34);
+            txtTenHang1.TabIndex = 5;
             // 
             // label3
             // 
@@ -541,7 +541,7 @@
             AutoScroll = true;
             ClientSize = new Size(1125, 768);
             Controls.Add(btnNextpageTaoDon);
-            Controls.Add(groupBox4);
+            Controls.Add(gbTThangHoa);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "FormTaoDonHang";
@@ -550,8 +550,8 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
+            gbTThangHoa.ResumeLayout(false);
+            gbTThangHoa.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -563,17 +563,17 @@
         private ListBox LBthoigianhenlay;
         private GroupBox groupBox2;
         private ComboBox cboProvinces;
-        private TextBox textBox5;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox txtSDTnguoiNhan;
+        private TextBox txtDiaChiNguoiNhan;
+        private TextBox txtHoTenNguoiNhan;
         private ComboBox cboXa;
         private ComboBox cboDistricts;
-        private ComboBox comboBox4;
-        private GroupBox groupBox4;
+        private ComboBox cbTgHenGiao;
+        private GroupBox gbTThangHoa;
         private RadioButton radioButton1;
         private Label label1;
         private RadioButton radioButton2;
-        private TextBox textBox12;
+        private TextBox txtTenHang1;
         private Label label3;
         private Label label2;
         private Label label4;
@@ -583,9 +583,9 @@
         private Label label7;
         private Label label6;
         private Label label11;
-        private Button button3;
-        private TextBox textBox3;
-        private TextBox textBox1;
+        private Button btnThemHangHoa;
+        private TextBox txtTrongLuong1;
+        private TextBox txtGiaTri;
         private Label label10;
         private CheckBox checkBox2;
         private CheckBox checkBox1;

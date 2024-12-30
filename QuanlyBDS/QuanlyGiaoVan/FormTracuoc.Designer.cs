@@ -1,6 +1,6 @@
 ﻿namespace QuanlyGiaoVan
 {
-    partial class FormTra_cuoc
+    partial class FormTraCuoc
     {
         /// <summary>
         /// Required designer variable.
@@ -42,12 +42,17 @@
             button2 = new Button();
             cboProvincesnhan = new ComboBox();
             btnTra = new Button();
-            button3 = new Button();
-            dataGridView1 = new DataGridView();
-            button4 = new Button();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            lbVTP = new Label();
+            lbGHN = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            button4 = new Button();
+            cboWardsgui = new ComboBox();
+            cboWardsnhan = new ComboBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -55,10 +60,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(372, 22);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(484, 28);
             label1.Name = "label1";
-            label1.Size = new Size(307, 32);
+            label1.Size = new Size(411, 45);
             label1.TabIndex = 0;
             label1.Text = "TRA CƯỚC VẬN CHUYỂN";
             // 
@@ -66,10 +70,9 @@
             // 
             cboProvincesgui.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboProvincesgui.FormattingEnabled = true;
-            cboProvincesgui.Location = new Point(124, 130);
-            cboProvincesgui.Margin = new Padding(2, 2, 2, 2);
+            cboProvincesgui.Location = new Point(161, 167);
             cboProvincesgui.Name = "cboProvincesgui";
-            cboProvincesgui.Size = new Size(314, 36);
+            cboProvincesgui.Size = new Size(407, 45);
             cboProvincesgui.TabIndex = 1;
             cboProvincesgui.Text = "    - Tỉnh/Thành phố -";
             cboProvincesgui.SelectedIndexChanged += cboProvincesgui_SelectedIndexChanged;
@@ -77,10 +80,9 @@
             // button1
             // 
             button1.Enabled = false;
-            button1.Location = new Point(310, 270);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Location = new Point(403, 430);
             button1.Name = "button1";
-            button1.Size = new Size(127, 36);
+            button1.Size = new Size(165, 46);
             button1.TabIndex = 2;
             button1.Text = "            gram";
             button1.UseVisualStyleBackColor = true;
@@ -88,20 +90,18 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(124, 88);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(161, 113);
             label2.Name = "label2";
-            label2.Size = new Size(93, 25);
+            label2.Size = new Size(121, 32);
             label2.TabIndex = 3;
             label2.Text = "Người gửi";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(607, 88);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(789, 113);
             label3.Name = "label3";
-            label3.Size = new Size(106, 25);
+            label3.Size = new Size(141, 32);
             label3.TabIndex = 4;
             label3.Text = "Người nhận";
             // 
@@ -109,31 +109,29 @@
             // 
             cboDistrictsgui.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboDistrictsgui.FormattingEnabled = true;
-            cboDistrictsgui.Location = new Point(124, 199);
-            cboDistrictsgui.Margin = new Padding(2, 2, 2, 2);
+            cboDistrictsgui.Location = new Point(161, 255);
             cboDistrictsgui.Name = "cboDistrictsgui";
-            cboDistrictsgui.Size = new Size(314, 36);
+            cboDistrictsgui.Size = new Size(407, 45);
             cboDistrictsgui.TabIndex = 7;
             cboDistrictsgui.Text = "    - Quận/Huyện -";
+            cboDistrictsgui.SelectedIndexChanged += cboDistrictsgui_SelectedIndexChanged;
             // 
             // txtKL
             // 
             txtKL.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtKL.Location = new Point(124, 271);
-            txtKL.Margin = new Padding(2, 2, 2, 2);
+            txtKL.Location = new Point(161, 431);
             txtKL.Name = "txtKL";
             txtKL.PlaceholderText = "Khối lượng gói hàng";
-            txtKL.Size = new Size(256, 34);
+            txtKL.Size = new Size(331, 43);
             txtKL.TabIndex = 10;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 7.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(124, 309);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(161, 479);
             label4.Name = "label4";
-            label4.Size = new Size(319, 20);
+            label4.Size = new Size(407, 25);
             label4.TabIndex = 11;
             label4.Text = "Tổng khối lượng các sản phẩm trong đơn hàng";
             // 
@@ -141,41 +139,38 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 7.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(658, 309);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(856, 476);
             label5.Name = "label5";
-            label5.Size = new Size(265, 20);
+            label5.Size = new Size(340, 25);
             label5.TabIndex = 16;
             label5.Text = "Để trống nếu bạn không có tiền thu hộ";
             // 
             // txtTTH
             // 
             txtTTH.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTTH.Location = new Point(607, 273);
-            txtTTH.Margin = new Padding(2, 2, 2, 2);
+            txtTTH.Location = new Point(789, 430);
             txtTTH.Name = "txtTTH";
             txtTTH.PlaceholderText = "Tiền thu hộ";
-            txtTTH.Size = new Size(256, 34);
+            txtTTH.Size = new Size(331, 43);
             txtTTH.TabIndex = 15;
             // 
             // cboDistrictsnhan
             // 
             cboDistrictsnhan.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboDistrictsnhan.FormattingEnabled = true;
-            cboDistrictsnhan.Location = new Point(607, 199);
-            cboDistrictsnhan.Margin = new Padding(2, 2, 2, 2);
+            cboDistrictsnhan.Location = new Point(789, 255);
             cboDistrictsnhan.Name = "cboDistrictsnhan";
-            cboDistrictsnhan.Size = new Size(314, 36);
+            cboDistrictsnhan.Size = new Size(407, 45);
             cboDistrictsnhan.TabIndex = 14;
             cboDistrictsnhan.Text = "    - Quận/Huyện -";
+            cboDistrictsnhan.SelectedIndexChanged += cboDistrictsnhan_SelectedIndexChanged;
             // 
             // button2
             // 
             button2.Enabled = false;
-            button2.Location = new Point(793, 270);
-            button2.Margin = new Padding(2, 2, 2, 2);
+            button2.Location = new Point(1031, 427);
             button2.Name = "button2";
-            button2.Size = new Size(127, 36);
+            button2.Size = new Size(165, 46);
             button2.TabIndex = 13;
             button2.Text = "            gram";
             button2.UseVisualStyleBackColor = true;
@@ -184,10 +179,9 @@
             // 
             cboProvincesnhan.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboProvincesnhan.FormattingEnabled = true;
-            cboProvincesnhan.Location = new Point(607, 130);
-            cboProvincesnhan.Margin = new Padding(2, 2, 2, 2);
+            cboProvincesnhan.Location = new Point(789, 167);
             cboProvincesnhan.Name = "cboProvincesnhan";
-            cboProvincesnhan.Size = new Size(314, 36);
+            cboProvincesnhan.Size = new Size(407, 45);
             cboProvincesnhan.TabIndex = 12;
             cboProvincesnhan.Text = "    - Tỉnh/Thành phố -";
             cboProvincesnhan.SelectedIndexChanged += cboProvincesnhan_SelectedIndexChanged;
@@ -195,65 +189,105 @@
             // btnTra
             // 
             btnTra.BackColor = Color.PaleGreen;
-            btnTra.Location = new Point(461, 396);
-            btnTra.Margin = new Padding(2, 2, 2, 2);
+            btnTra.Location = new Point(599, 507);
             btnTra.Name = "btnTra";
-            btnTra.Size = new Size(127, 36);
+            btnTra.Size = new Size(165, 46);
             btnTra.TabIndex = 17;
             btnTra.Text = "Tra cước";
             btnTra.UseVisualStyleBackColor = false;
             btnTra.Click += btnCalculateFee_Click;
             // 
-            // button3
+            // panel1
             // 
-            button3.BackColor = Color.PaleGreen;
-            button3.Location = new Point(735, 396);
-            button3.Margin = new Padding(2, 2, 2, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(127, 36);
-            button3.TabIndex = 19;
-            button3.Text = "Tra cước";
-            button3.UseVisualStyleBackColor = false;
+            panel1.Controls.Add(lbVTP);
+            panel1.Controls.Add(lbGHN);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(button4);
+            panel1.Location = new Point(12, 99);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1357, 553);
+            panel1.TabIndex = 18;
+            panel1.Paint += panel1_Paint;
             // 
-            // dataGridView1
+            // lbVTP
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(16, 176);
-            dataGridView1.Margin = new Padding(2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(766, 339);
-            dataGridView1.TabIndex = 0;
+            lbVTP.AutoSize = true;
+            lbVTP.Font = new Font("Segoe UI", 13.875F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbVTP.Location = new Point(323, 179);
+            lbVTP.Name = "lbVTP";
+            lbVTP.Size = new Size(202, 50);
+            lbVTP.TabIndex = 5;
+            lbVTP.Text = "Viettel post";
+            // 
+            // lbGHN
+            // 
+            lbGHN.AutoSize = true;
+            lbGHN.Font = new Font("Segoe UI", 13.875F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbGHN.Location = new Point(323, 52);
+            lbGHN.Name = "lbGHN";
+            lbGHN.Size = new Size(303, 50);
+            lbGHN.TabIndex = 4;
+            lbGHN.Text = "Giao hàng nhanh";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.vt;
+            pictureBox2.Location = new Point(42, 162);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(200, 100);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.ghn;
+            pictureBox1.Location = new Point(42, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(200, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // button4
             // 
-            button4.Location = new Point(337, 377);
-            button4.Margin = new Padding(2);
+            button4.Location = new Point(602, 495);
             button4.Name = "button4";
-            button4.Size = new Size(115, 36);
+            button4.Size = new Size(150, 46);
             button4.TabIndex = 1;
             button4.Text = "OK";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // panel1
+            // cboWardsgui
             // 
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(dataGridView1);
-            panel1.Location = new Point(951, 88);
-            panel1.Margin = new Padding(2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(796, 432);
-            panel1.TabIndex = 18;
-            panel1.Paint += panel1_Paint;
+            cboWardsgui.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cboWardsgui.FormattingEnabled = true;
+            cboWardsgui.Location = new Point(161, 344);
+            cboWardsgui.Name = "cboWardsgui";
+            cboWardsgui.Size = new Size(407, 45);
+            cboWardsgui.TabIndex = 20;
+            cboWardsgui.Text = "    - Xã/Phường -";
             // 
-            // FormTra_cuoc
+            // cboWardsnhan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            cboWardsnhan.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cboWardsnhan.FormattingEnabled = true;
+            cboWardsnhan.Location = new Point(789, 344);
+            cboWardsnhan.Name = "cboWardsnhan";
+            cboWardsnhan.Size = new Size(407, 45);
+            cboWardsnhan.TabIndex = 21;
+            cboWardsnhan.Text = "    - Xã/Phường -";
+            // 
+            // Tra_cước
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1062, 587);
-            Controls.Add(button3);
+            ClientSize = new Size(1381, 664);
             Controls.Add(panel1);
+            Controls.Add(cboWardsnhan);
+            Controls.Add(cboWardsgui);
             Controls.Add(btnTra);
             Controls.Add(label5);
             Controls.Add(txtTTH);
@@ -268,12 +302,13 @@
             Controls.Add(button1);
             Controls.Add(cboProvincesgui);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
-            Name = "FormTra_cuoc";
+            Name = "Tra_cước";
             Text = "Tra_cước";
             Load += Tra_cước_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -294,9 +329,13 @@
         private Button button2;
         private ComboBox cboProvincesnhan;
         private Button btnTra;
-        private Button button3;
-        private DataGridView dataGridView1;
-        private Button button4;
         private Panel panel1;
+        private Button button4;
+        private ComboBox cboWardsgui;
+        private ComboBox cboWardsnhan;
+        private PictureBox pictureBox1;
+        private Label lbVTP;
+        private Label lbGHN;
+        private PictureBox pictureBox2;
     }
 }
