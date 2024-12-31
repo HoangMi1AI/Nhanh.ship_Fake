@@ -72,9 +72,22 @@
 
         private void Tra_Cuoc_Click(object sender, EventArgs e)
         {
-            FormTraCuoc formtracuoc = new FormTraCuoc();
+            
+            // Tạo một instance của FormTraCuoc
+            FormTraCuoc formTra_cuoc = new FormTraCuoc();
+
+            // Đăng ký sự kiện FormClosed cho FormTraCuoc
+            formTra_cuoc.FormClosed += (s, args) =>
+            {
+                // Hiển thị lại FormGiaoHang2
+                this.Show();
+            };
+
+            // Hiển thị FormTraCuoc
+            formTra_cuoc.Show();
+
+            // Ẩn FormGiaoHang2
             this.Hide();
-            formtracuoc.Show();
 
         }
 
