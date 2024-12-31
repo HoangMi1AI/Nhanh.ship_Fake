@@ -272,8 +272,8 @@ namespace QuanlyGiaoVan
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
-            _formTaoDonHang2.Show();
+            panel1.Visible = false;
         }
+        
     }
 }

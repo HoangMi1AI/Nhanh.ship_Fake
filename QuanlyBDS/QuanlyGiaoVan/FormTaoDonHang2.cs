@@ -20,15 +20,23 @@ namespace QuanlyGiaoVan
 
         private void btnTraCuoc_Click(object sender, EventArgs e)
         {
-            // Tạo một instance của form kế tiếp
+            // Tạo một instance của FormTraCuoc
             FormTraCuoc formTra_cuoc = new FormTraCuoc();
 
-            // Hiển thị form tiếp theo
+            // Đăng ký sự kiện FormClosed cho FormTraCuoc
+            formTra_cuoc.FormClosed += (s, args) =>
+            {
+                // Hiển thị lại FormGiaoHang2
+                this.Show();
+            };
+
+            // Hiển thị FormTraCuoc
             formTra_cuoc.Show();
 
-            // Đóng form hiện tại nếu cần
+            // Ẩn FormGiaoHang2
             this.Hide();
         }
+
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
