@@ -328,7 +328,7 @@
             test.TabIndex = 22;
             test.Text = "Tra cước";
             test.UseVisualStyleBackColor = false;
-            test.Click += test_Click;
+            //test.Click += test_Click;
             // 
             // FormTraCuoc
             // 

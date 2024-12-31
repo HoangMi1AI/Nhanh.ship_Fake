@@ -70,6 +70,9 @@
             radioButton1 = new RadioButton();
             label1 = new Label();
             btnNextpageTaoDon = new Button();
+            textBox1 = new TextBox();
+            textBox3 = new TextBox();
+            textBox5 = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             gbTThangHoa.SuspendLayout();
@@ -274,6 +277,13 @@
             // 
             // gbTThangHoa
             // 
+            gbTThangHoa.Controls.Add(textBox6);
+            gbTThangHoa.Controls.Add(textBox4);
+            gbTThangHoa.Controls.Add(label13);
+            gbTThangHoa.Controls.Add(label11);
+            gbTThangHoa.Controls.Add(textBox5);
+            gbTThangHoa.Controls.Add(textBox3);
+            gbTThangHoa.Controls.Add(textBox1);
             gbTThangHoa.Controls.Add(checkBox6);
             gbTThangHoa.Controls.Add(checkBox5);
             gbTThangHoa.Controls.Add(checkBox4);
@@ -282,10 +292,6 @@
             gbTThangHoa.Controls.Add(checkBox1);
             gbTThangHoa.Controls.Add(label15);
             gbTThangHoa.Controls.Add(label14);
-            gbTThangHoa.Controls.Add(textBox6);
-            gbTThangHoa.Controls.Add(textBox4);
-            gbTThangHoa.Controls.Add(label13);
-            gbTThangHoa.Controls.Add(label11);
             gbTThangHoa.Controls.Add(btnThemHangHoa);
             gbTThangHoa.Controls.Add(txtTrongLuong1);
             gbTThangHoa.Controls.Add(txtGiaTri);
@@ -307,7 +313,7 @@
             // checkBox6
             // 
             checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(366, 573);
+            checkBox6.Location = new Point(360, 597);
             checkBox6.Name = "checkBox6";
             checkBox6.Size = new Size(113, 62);
             checkBox6.TabIndex = 36;
@@ -317,7 +323,7 @@
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(209, 586);
+            checkBox5.Location = new Point(203, 610);
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(148, 33);
             checkBox5.TabIndex = 35;
@@ -327,7 +333,7 @@
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(43, 586);
+            checkBox4.Location = new Point(37, 610);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(129, 33);
             checkBox4.TabIndex = 34;
@@ -337,7 +343,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(366, 527);
+            checkBox3.Location = new Point(360, 551);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(141, 33);
             checkBox3.TabIndex = 33;
@@ -347,7 +353,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(209, 527);
+            checkBox2.Location = new Point(203, 551);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(87, 33);
             checkBox2.TabIndex = 31;
@@ -357,7 +363,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(43, 527);
+            checkBox1.Location = new Point(37, 551);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(118, 33);
             checkBox1.TabIndex = 30;
@@ -368,7 +374,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(29, 488);
+            label15.Location = new Point(23, 512);
             label15.Name = "label15";
             label15.Size = new Size(296, 26);
             label15.TabIndex = 29;
@@ -378,7 +384,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(29, 446);
+            label14.Location = new Point(23, 476);
             label14.Name = "label14";
             label14.Size = new Size(481, 25);
             label14.TabIndex = 28;
@@ -387,7 +393,7 @@
             // textBox6
             // 
             textBox6.Font = new Font("Yu Gothic UI", 10F);
-            textBox6.Location = new Point(275, 409);
+            textBox6.Location = new Point(269, 443);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.PlaceholderText = "0 vnd";
@@ -397,7 +403,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Yu Gothic UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(275, 362);
+            textBox4.Location = new Point(269, 396);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "0 kg";
@@ -408,7 +414,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Comic Sans MS", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(29, 408);
+            label13.Location = new Point(23, 442);
             label13.Name = "label13";
             label13.Size = new Size(135, 30);
             label13.TabIndex = 25;
@@ -418,7 +424,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Comic Sans MS", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(29, 362);
+            label11.Location = new Point(23, 396);
             label11.Name = "label11";
             label11.Size = new Size(175, 30);
             label11.TabIndex = 23;
@@ -428,7 +434,7 @@
             // 
             btnThemHangHoa.Font = new Font("Segoe UI", 10F);
             btnThemHangHoa.ForeColor = Color.Red;
-            btnThemHangHoa.Location = new Point(209, 282);
+            btnThemHangHoa.Location = new Point(285, 310);
             btnThemHangHoa.Name = "btnThemHangHoa";
             btnThemHangHoa.Size = new Size(160, 39);
             btnThemHangHoa.TabIndex = 22;
@@ -437,7 +443,7 @@
             // 
             // txtTrongLuong1
             // 
-            txtTrongLuong1.Location = new Point(209, 217);
+            txtTrongLuong1.Location = new Point(102, 205);
             txtTrongLuong1.Multiline = true;
             txtTrongLuong1.Name = "txtTrongLuong1";
             txtTrongLuong1.PlaceholderText = "Trọng lượng";
@@ -446,18 +452,18 @@
             // 
             // txtGiaTri
             // 
-            txtGiaTri.Location = new Point(376, 217);
+            txtGiaTri.Location = new Point(102, 315);
             txtGiaTri.Multiline = true;
             txtGiaTri.Name = "txtGiaTri";
             txtGiaTri.PlaceholderText = "Giá trị";
-            txtGiaTri.Size = new Size(115, 34);
+            txtGiaTri.Size = new Size(120, 34);
             txtGiaTri.TabIndex = 20;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(29, 320);
+            label10.Location = new Point(23, 357);
             label10.Name = "label10";
             label10.Size = new Size(481, 25);
             label10.TabIndex = 19;
@@ -465,7 +471,7 @@
             // 
             // txtTenHang1
             // 
-            txtTenHang1.Location = new Point(209, 159);
+            txtTenHang1.Location = new Point(209, 146);
             txtTenHang1.Multiline = true;
             txtTenHang1.Name = "txtTenHang1";
             txtTenHang1.PlaceholderText = "Nhập tên hàng hóa";
@@ -476,7 +482,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Comic Sans MS", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(29, 159);
+            label3.Location = new Point(29, 145);
             label3.Name = "label3";
             label3.Size = new Size(123, 30);
             label3.TabIndex = 18;
@@ -533,6 +539,33 @@
             btnNextpageTaoDon.Text = "Tiếp tục";
             btnNextpageTaoDon.UseVisualStyleBackColor = true;
             btnNextpageTaoDon.Click += btnNextpageTaoDon_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(102, 257);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Chiều cao";
+            textBox1.Size = new Size(120, 34);
+            textBox1.TabIndex = 37;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(302, 257);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "Chiều rộng";
+            textBox3.Size = new Size(120, 34);
+            textBox3.TabIndex = 38;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(302, 205);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.PlaceholderText = "Chiều dài ";
+            textBox5.Size = new Size(120, 34);
+            textBox5.TabIndex = 39;
             // 
             // FormTaoDonHang
             // 
@@ -599,5 +632,8 @@
         private CheckBox checkBox3;
         private CheckBox checkBox6;
         private Button btnNextpageTaoDon;
+        private TextBox textBox5;
+        private TextBox textBox3;
+        private TextBox textBox1;
     }
 }
