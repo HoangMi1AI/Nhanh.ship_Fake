@@ -4,7 +4,9 @@ namespace QuanlyGiaoVan
 {
     public partial class FormDangNhap : Form
     {
+        public bool CheckLoginStatus = false;
         private Class_userDB userDB = new Class_userDB();
+
         public FormDangNhap()
         {
             InitializeComponent();
@@ -112,6 +114,8 @@ namespace QuanlyGiaoVan
             Class_userDB userDB = new Class_userDB();
             if (userDB.CheckLogin(username, password))
             {
+                CheckLoginStatus = true;
+                MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FormGiaoDienTrong formGiaoDienTrong = new FormGiaoDienTrong();
                 formGiaoDienTrong.Show();
                 this.Close();
