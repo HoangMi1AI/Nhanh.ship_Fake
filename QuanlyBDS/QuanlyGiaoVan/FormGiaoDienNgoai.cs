@@ -110,8 +110,10 @@
             // Đăng ký sự kiện FormClosed cho FormTraCuoc
             formdangnhap.FormClosed += (s, args) =>
             {
-                // Hiển thị lại FormGiaoHang2
-                this.Show();
+                if (!formdangnhap.CheckLoginStatus) // CheckLoginStatus là một biến boolean
+                {
+                    this.Show();
+                }
             };
 
             // Hiển thị FormTraCuoc
