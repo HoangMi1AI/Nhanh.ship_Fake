@@ -13,10 +13,17 @@ namespace QuanlyGiaoVan
 {
     public partial class FormTraCuoc : Form
     {
+        private FormTaoDonHang2 _formTaoDonHang2;
         public FormTraCuoc()
         {
             InitializeComponent();
             LoadProvinces();
+        }
+        public FormTraCuoc(FormTaoDonHang2 formTaoDonHang2)
+        {
+            InitializeComponent();
+            LoadProvinces();
+            _formTaoDonHang2 = formTaoDonHang2;
         }
 
         private async void LoadProvinces()
@@ -200,8 +207,15 @@ namespace QuanlyGiaoVan
             string ward_codegui = ((ComboBoxItem)cboWardsgui.SelectedItem).Value.ToString();
             int district_idnhan = (int)((ComboBoxItem)cboDistrictsnhan.SelectedItem).Value;
             string ward_codenhan = ((ComboBoxItem)cboWardsnhan.SelectedItem).Value.ToString();
-            string ADDgui = cboWardsgui.Text + ", "+ cboDistrictsgui.Text + ", "+ cboProvincesgui.Text;
+            string ADDgui = cboWardsgui.Text + ", " + cboDistrictsgui.Text + ", " + cboProvincesgui.Text;
             string ADDnhan = cboWardsnhan.Text + ", " + cboDistrictsnhan.Text + ", " + cboProvincesnhan.Text;
+            string pickProvince = cboProvincesgui.Text;
+            string pickDistrict = cboDistrictsgui.Text;
+            string pickWard = cboWardsgui.Text;
+            string Province = cboProvincesnhan.Text;
+            string District = cboDistrictsnhan.Text;
+            string Ward = cboWardsnhan.Text;
+
 
             if (string.IsNullOrEmpty(ward_codegui) || string.IsNullOrEmpty(ward_codenhan) || string.IsNullOrEmpty(txtKL.Text))
             {
@@ -215,12 +229,16 @@ namespace QuanlyGiaoVan
                 await ghnService.CalculateShippingFee(district_idgui, ward_codegui, district_idnhan, ward_codenhan, cannang);
                 var _viettelPostService = new ViettelPostService();
                 string priceInfo = await _viettelPostService.GetPriceAllNlpAsync(ADDgui, ADDnhan, cannang);
+                GHTKService ghtkService = new GHTKService();
+                string result = await ghtkService.CalculateShippingFeeAsync(pickProvince, pickDistrict, pickWard, Province, District, Ward, cannang);
                 lbGHN.Text = "Phí vận chuyển: " + ghnService.phi + " VNĐ";
                 lbVTP.Text = priceInfo;
+                lbGHTK.Text = result;
                 panel1.Visible = true;
             }
-            
+
         }
+
         public class ComboBoxItem
         {
             public string Text { get; set; } // Tên hiển thị
@@ -233,7 +251,7 @@ namespace QuanlyGiaoVan
         }
         private async void btnGetShippingPrice_Click(object sender, EventArgs e)
         {
-            string ADDgui = cboWardsgui.Text + ", "+ cboDistrictsgui.Text + ", "+ cboProvincesgui.Text;
+            string ADDgui = cboWardsgui.Text + ", " + cboDistrictsgui.Text + ", " + cboProvincesgui.Text;
             string ADDnhan = cboWardsnhan.Text + ", " + cboDistrictsnhan.Text + ", " + cboProvincesnhan.Text;
 
             if (string.IsNullOrEmpty(txtKL.Text))
@@ -251,6 +269,11 @@ namespace QuanlyGiaoVan
                 MessageBox.Show(priceInfo, "Cước vận chuyển");
             }
         }
-        
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            _formTaoDonHang2.Show();
+        }
     }
 }
