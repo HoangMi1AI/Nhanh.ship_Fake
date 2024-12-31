@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Newtonsoft.Json;
 
 namespace QuanlyGiaoVan
@@ -19,7 +20,7 @@ namespace QuanlyGiaoVan
         private const string Token = "333326a6-c674-11ef-8400-fe4ff714b6c1";
 
         // Hàm tính phí vận chuyển
-        public async Task CalculateShippingFee( int district_idgui, string ward_codegui, int district_idguinhan, string ward_codenhan, int cannang)
+        public async Task CalculateShippingFee(int district_idgui, string ward_codegui, int district_idguinhan, string ward_codenhan, int cannang)
         {
             var requestPayload = new
             {
@@ -72,6 +73,79 @@ namespace QuanlyGiaoVan
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
             }
         }
+        public async Task CreateShippingOrder(string toName, string toPhone,
+    string toAddress, string toWardCode, int toDistrictId, int weight,
+    int length, int width, int height, List<object> items)
+        {
+            var requestPayload = new
+            {
+                shop_id = 5559346,
+                payment_type_id = 1,
+                required_note = "KHONGCHOXEMHANG",
+                to_name = toName,
+                to_phone = toPhone,
+                to_address = toAddress,//"72 Thành Thái, Phường 14, Quận 10, Hồ Chí Minh, Vietnam"
+                to_ward_code = toWardCode,
+                to_district_id = toDistrictId,
+                weight = weight,
+                length = length,
+                width = width,
+                height = height,
+                service_type_id = 2,
+               items = items,//new[]
+        //        {
+        //    new
+        //    {
+        //        name = "Áo Polo",
+        //        code = "Polo123",
+        //        quantity = 1,
+        //        price = 200000,
+        //        length = 12,
+        //        width = 12,
+        //        weight = 1200,
+        //        height = 12,
+        //        category = new
+        //        {
+        //            level1 = "Áo"
+        //        }
+        //    }
+        //},
+                quantity = 1
+            };
 
+            string jsonRequest = JsonConvert.SerializeObject(requestPayload);
+            var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+            content.Headers.Add("Token", Token);
+
+            try
+            {
+                var response = await client.PostAsync("shipping-order/create", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseBody = await response.Content.ReadAsStringAsync();
+                    var jsonData = JsonConvert.DeserializeObject<dynamic>(responseBody);
+                    string orderCode = jsonData?.data?.order_code?.ToString();
+
+                    if (!string.IsNullOrEmpty(orderCode))
+                    {
+                        MessageBox.Show($"Tạo đơn hàng thành công! Mã đơn hàng: {orderCode}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể lấy mã đơn hàng từ phản hồi API.");
+                    }
+                }
+                else
+                {
+                    var errorDetails = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Lỗi: {response.StatusCode}\nChi tiết: {errorDetails}");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+            }
+        }
     }
 }
