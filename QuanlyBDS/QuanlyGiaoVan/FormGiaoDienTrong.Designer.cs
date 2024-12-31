@@ -1,6 +1,6 @@
 ﻿namespace QuanlyGiaoVan
 {
-    partial class FormGiaoDienNgoai
+    partial class FormGiaoDienTrong
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,9 +29,9 @@
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiaoDienNgoai));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiaoDienTrong));
             roundPanel = new RoundPanel();
-            noBorderButton3 = new NoBorderButton();
+            btnDangXuat = new NoBorderButton();
             noBorderButton2 = new NoBorderButton();
             noBorderButton1 = new NoBorderButton();
             btnHoiDap = new NoBorderButton();
@@ -65,7 +65,7 @@
             roundPanel.BackColor = Color.FromArgb(32, 43, 61);
             roundPanel.BorderColor = Color.Transparent;
             roundPanel.BorderThickness = 2F;
-            roundPanel.Controls.Add(noBorderButton3);
+            roundPanel.Controls.Add(btnDangXuat);
             roundPanel.Controls.Add(noBorderButton2);
             roundPanel.Controls.Add(noBorderButton1);
             roundPanel.Controls.Add(btnHoiDap);
@@ -82,18 +82,18 @@
             roundPanel.TabIndex = 0;
             roundPanel.Paint += roundPanel_Paint;
             // 
-            // noBorderButton3
+            // btnDangXuat
             // 
-            noBorderButton3.BackColor = Color.FromArgb(43, 57, 82);
-            noBorderButton3.FlatStyle = FlatStyle.Popup;
-            noBorderButton3.ForeColor = SystemColors.ControlLightLight;
-            noBorderButton3.Location = new Point(0, 484);
-            noBorderButton3.Margin = new Padding(4);
-            noBorderButton3.Name = "noBorderButton3";
-            noBorderButton3.Size = new Size(219, 60);
-            noBorderButton3.TabIndex = 5;
-            noBorderButton3.Text = "Đăng xuất";
-            noBorderButton3.UseVisualStyleBackColor = false;
+            btnDangXuat.BackColor = Color.FromArgb(43, 57, 82);
+            btnDangXuat.FlatStyle = FlatStyle.Popup;
+            btnDangXuat.ForeColor = SystemColors.ControlLightLight;
+            btnDangXuat.Location = new Point(0, 484);
+            btnDangXuat.Margin = new Padding(4);
+            btnDangXuat.Name = "btnDangXuat";
+            btnDangXuat.Size = new Size(219, 60);
+            btnDangXuat.TabIndex = 5;
+            btnDangXuat.Text = "Đăng xuất";
+            btnDangXuat.UseVisualStyleBackColor = false;
             // 
             // noBorderButton2
             // 
@@ -341,7 +341,7 @@
             label1.TabIndex = 0;
             label1.Text = "DCMM.ship";
             // 
-            // FormGiaoDienNgoai
+            // FormGiaoDienTrong
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -350,7 +350,7 @@
             Controls.Add(roundPanel);
             Controls.Add(roundPanel1);
             Margin = new Padding(4);
-            Name = "FormGiaoDienNgoai";
+            Name = "FormGiaoDienTrong";
             Text = "FormGiaoDienTrong";
             Load += FormGiaoDienNgoai_Load;
             roundPanel.ResumeLayout(false);
@@ -387,7 +387,7 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
-        private NoBorderButton noBorderButton3;
+        private NoBorderButton btnDangXuat;
         private NoBorderButton noBorderButton2;
         private NoBorderButton noBorderButton1;
     }

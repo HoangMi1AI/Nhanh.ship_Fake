@@ -1,8 +1,8 @@
 ﻿namespace QuanlyGiaoVan
 {
-    public partial class FormGiaoDienTrong : Form
+    public partial class FormGiaoDienNgoai : Form
     {
-        public FormGiaoDienTrong()
+        public FormGiaoDienNgoai()
         {
             InitializeComponent();
 
@@ -45,10 +45,7 @@
 
 
 
-        private void FormGiaoDienNgoai_Load(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void circlePanel_Paint(object sender, PaintEventArgs e)
         {
@@ -70,8 +67,27 @@
 
         }
 
-        private void myButton_Click(object sender, EventArgs e)
+        private void btnDangKy_Click(object sender, EventArgs e)
         {
+
+            // Tạo một instance của FormTraCuoc
+            FormDangKy formdangki = new FormDangKy();
+
+            // Đăng ký sự kiện FormClosed cho FormTraCuoc
+            formdangki.FormClosed += (s, args) =>
+            {
+                // Hiển thị lại FormGiaoHang2
+                this.Show();
+            };
+
+            // Hiển thị FormTraCuoc
+            formdangki.Show();
+
+            // Ẩn FormGiaoHang2
+            this.Hide();
+
+
+
 
         }
 
@@ -83,6 +99,26 @@
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+
+            // Tạo một instance của FormTraCuoc
+            FormDangNhap formdangnhap = new FormDangNhap();
+
+            // Đăng ký sự kiện FormClosed cho FormTraCuoc
+            formdangnhap.FormClosed += (s, args) =>
+            {
+                // Hiển thị lại FormGiaoHang2
+                this.Show();
+            };
+
+            // Hiển thị FormTraCuoc
+            formdangnhap.Show();
+
+            // Ẩn FormGiaoHang2
+            this.Hide();
         }
     }
 }

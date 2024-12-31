@@ -1,8 +1,8 @@
 ﻿namespace QuanlyGiaoVan
 {
-    public partial class FormGiaoDienNgoai : Form
+    public partial class FormGiaoDienTrong : Form
     {
-        public FormGiaoDienNgoai()
+        public FormGiaoDienTrong()
         {
             InitializeComponent();
 
