@@ -1,7 +1,10 @@
-﻿namespace QuanlyGiaoVan
+﻿using MySql.Data.MySqlClient;
+
+namespace QuanlyGiaoVan
 {
     public partial class FormDangNhap : Form
     {
+        private Class_userDB userDB = new Class_userDB();
         public FormDangNhap()
         {
             InitializeComponent();
@@ -93,6 +96,30 @@
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDangNhap1_Click(object sender, EventArgs e)
+        {
+            string username = txtTK.Text;
+            string password = txtMK.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Class_userDB userDB = new Class_userDB();
+            if (userDB.CheckLogin(username, password))
+            {
+                FormGiaoDienTrong formGiaoDienTrong = new FormGiaoDienTrong();
+                formGiaoDienTrong.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

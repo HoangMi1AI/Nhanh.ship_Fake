@@ -81,3 +81,4 @@ D:\School\PTTKHT\Nhanh.ship_Fake\QuanlyBDS\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoV
 D:\School\PTTKHT\Nhanh.ship_Fake\QuanlyBDS\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.genruntimeconfig.cache
 D:\School\PTTKHT\Nhanh.ship_Fake\QuanlyBDS\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\ref\QuanlyGiaoVan.dll
 D:\School\PTTKHT\Nhanh.ship_Fake\QuanlyBDS\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormXacNhanDonHang.resources
+C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormXacNhanDonHang.resources

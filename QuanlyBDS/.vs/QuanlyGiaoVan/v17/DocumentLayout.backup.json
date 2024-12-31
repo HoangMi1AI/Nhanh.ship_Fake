@@ -1,54 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtaodonhang2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtaodonhang2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formdangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formdangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formgiaodientrong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formgiaodientrong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\quanlygiaovan\\formgiaodientrong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formgiaodientrong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\class_userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\class_userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtracuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtracuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtaodonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtaodonhang2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtaodonhang2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtracuoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtracuoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\class_diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\class_diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\class_fe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formtaodonhang2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formtaodonhang2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formgiaodienngoai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formgiaodienngoai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|c:\\users\\asus\\phantichtkht\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\class_fe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\class_fe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\formxacnhandonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\formxacnhandonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|d:\\school\\pttkht\\nhanh.ship_fake\\quanlybds\\nhanh.ship_fake\\quanlybds\\quanlygiaovan\\donvivanchuyen1\\ghtkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78D5EF55-47F6-4198-AA73-99F9E5103E2A}|QuanlyGiaoVan\\QuanlyGiaoVan.csproj|solutionrelative:quanlygiaovan\\donvivanchuyen1\\ghtkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,49 +94,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Class_Diachi.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_Diachi.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\Class_Diachi.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_Diachi.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\Class_Diachi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FormGiaoDienTrong.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormGiaoDienTrong.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormGiaoDienTrong.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormGiaoDienTrong.cs",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormGiaoDienTrong.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T06:19:09.932Z",
+              "WhenOpened": "2024-12-31T09:28:37.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ConnectDB.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\ConnectDB.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\ConnectDB.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\ConnectDB.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\ConnectDB.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAUAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormGiaoDienTrong.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormGiaoDienTrong.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormGiaoDienTrong.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormGiaoDienTrong.cs [Design]",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormGiaoDienTrong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T06:01:41.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormXacNhanDonHang.cs [Design]",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormXacNhanDonHang.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormXacNhanDonHang.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormXacNhanDonHang.cs [Design]",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormXacNhanDonHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T05:58:15.573Z",
+              "WhenOpened": "2024-12-31T07:28:50.999Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FormDangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangNhap.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormDangNhap.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangNhap.cs [Design]",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T08:31:11.506Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormDangNhap.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangNhap.Designer.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormDangNhap.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangNhap.Designer.cs",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormDangNhap.Designer.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAjwMYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T08:30:55.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangNhap.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormDangNhap.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangNhap.cs",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormDangNhap.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAuwHUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T08:30:27.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormDangKy.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangKy.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormDangKy.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangKy.cs",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormDangKy.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAALwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T08:20:53.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormDangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangKy.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormDangKy.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormDangKy.cs [Design]",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T08:06:50.455Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class_userDB.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_userDB.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\Class_userDB.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_userDB.cs",
+              "RelativeToolTip": "QuanlyGiaoVan\\Class_userDB.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwDgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T08:01:47.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormGiaoDienNgoai.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormGiaoDienNgoai.cs",
+              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormGiaoDienNgoai.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormGiaoDienNgoai.cs",
+              "RelativeToolTip": "QuanlyGiaoVan\\FormGiaoDienNgoai.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T07:23:26.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FormTaoDonHang.cs [Design]",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs [Design]",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs [Design]",
               "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T05:55:31.825Z",
@@ -136,102 +220,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormTaoDonHang2.cs [Design]",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang2.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang2.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang2.cs [Design]",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T05:43:05.775Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "FormTaoDonHang.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang.cs",
               "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwB4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAWwDQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T04:42:44.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormTracuoc.Designer.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTracuoc.Designer.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTracuoc.Designer.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTracuoc.Designer.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormTracuoc.Designer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T04:15:04.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GHTKService.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\DonViVanChuyen1\\GHTKService.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\DonViVanChuyen1\\GHTKService.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\DonViVanChuyen1\\GHTKService.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\DonViVanChuyen1\\GHTKService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T04:14:52.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormTracuoc.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTracuoc.cs",
-              "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTracuoc.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTracuoc.cs",
-              "RelativeToolTip": "QuanlyGiaoVan\\FormTracuoc.cs",
-              "ViewState": "AgIAABcBAAAAAAAAAAAAANUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T04:05:56.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Program.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\Program.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Program.cs",
               "RelativeToolTip": "QuanlyGiaoVan\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T14:11:18.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Class_FE.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_FE.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_FE.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\Class_FE.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_FE.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\Class_FE.cs",
               "RelativeToolTip": "QuanlyGiaoVan\\Class_FE.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T03:12:49.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T03:12:49.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "FormTaoDonHang2.cs",
-              "DocumentMoniker": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang2.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang2.cs",
               "RelativeDocumentMoniker": "QuanlyGiaoVan\\FormTaoDonHang2.cs",
-              "ToolTip": "D:\\School\\PTTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang2.cs",
+              "ToolTip": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\FormTaoDonHang2.cs",
               "RelativeToolTip": "QuanlyGiaoVan\\FormTaoDonHang2.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAuwCoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T04:02:40.699Z",
               "EditorCaption": ""

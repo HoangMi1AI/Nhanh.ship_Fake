@@ -13,7 +13,7 @@
             ConnectDB connector = new ConnectDB();
             connector.connectDB();
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormTaoDonHang2());
+            Application.Run(new FormGiaoDienNgoai());
         }
     }
 }

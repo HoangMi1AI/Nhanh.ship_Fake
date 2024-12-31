@@ -1,6 +1,6 @@
 ﻿namespace QuanlyGiaoVan
 {
-    partial class FormGiaoDienTrong
+    partial class FormGiaoDienNgoai
     {
         /// <summary>
         ///  Required designer variable.
@@ -70,7 +70,7 @@
             roundPanel.CornerRadiusTopLeft = 20;
             roundPanel.CornerRadiusTopRight = 30;
             roundPanel.Location = new Point(15, 15);
-            roundPanel.Margin = new Padding(4, 4, 4, 4);
+            roundPanel.Margin = new Padding(4);
             roundPanel.Name = "roundPanel";
             roundPanel.Size = new Size(215, 559);
             roundPanel.TabIndex = 0;
@@ -82,7 +82,7 @@
             btnHoiDap.FlatStyle = FlatStyle.Popup;
             btnHoiDap.ForeColor = SystemColors.ControlLightLight;
             btnHoiDap.Location = new Point(0, 275);
-            btnHoiDap.Margin = new Padding(4, 4, 4, 4);
+            btnHoiDap.Margin = new Padding(4);
             btnHoiDap.Name = "btnHoiDap";
             btnHoiDap.Size = new Size(219, 60);
             btnHoiDap.TabIndex = 2;
@@ -95,12 +95,13 @@
             btnDangNhap.FlatStyle = FlatStyle.Popup;
             btnDangNhap.ForeColor = SystemColors.ControlLightLight;
             btnDangNhap.Location = new Point(0, 125);
-            btnDangNhap.Margin = new Padding(4, 4, 4, 4);
+            btnDangNhap.Margin = new Padding(4);
             btnDangNhap.Name = "btnDangNhap";
             btnDangNhap.Size = new Size(219, 60);
             btnDangNhap.TabIndex = 1;
             btnDangNhap.Text = "Đăng nhập";
             btnDangNhap.UseVisualStyleBackColor = false;
+            btnDangNhap.Click += btnDangNhap_Click;
             // 
             // btnDangKy
             // 
@@ -108,13 +109,13 @@
             btnDangKy.FlatStyle = FlatStyle.Popup;
             btnDangKy.ForeColor = SystemColors.ControlLightLight;
             btnDangKy.Location = new Point(0, 200);
-            btnDangKy.Margin = new Padding(4, 4, 4, 4);
+            btnDangKy.Margin = new Padding(4);
             btnDangKy.Name = "btnDangKy";
             btnDangKy.Size = new Size(219, 60);
             btnDangKy.TabIndex = 0;
             btnDangKy.Text = "Đăng ký";
             btnDangKy.UseVisualStyleBackColor = false;
-            btnDangKy.Click += myButton_Click;
+            btnDangKy.Click += btnDangKy_Click;
             // 
             // roundPanel1
             // 
@@ -134,7 +135,7 @@
             roundPanel1.CornerRadiusTopLeft = 20;
             roundPanel1.CornerRadiusTopRight = 20;
             roundPanel1.Location = new Point(15, 15);
-            roundPanel1.Margin = new Padding(4, 4, 4, 4);
+            roundPanel1.Margin = new Padding(4);
             roundPanel1.Name = "roundPanel1";
             roundPanel1.Size = new Size(1154, 559);
             roundPanel1.TabIndex = 1;
@@ -145,7 +146,7 @@
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Location = new Point(341, 189);
-            tabControl1.Margin = new Padding(4, 4, 4, 4);
+            tabControl1.Margin = new Padding(4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(680, 366);
@@ -157,9 +158,9 @@
             tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
             tabPage1.BackgroundImageLayout = ImageLayout.Zoom;
             tabPage1.Location = new Point(4, 34);
-            tabPage1.Margin = new Padding(4, 4, 4, 4);
+            tabPage1.Margin = new Padding(4);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(4, 4, 4, 4);
+            tabPage1.Padding = new Padding(4);
             tabPage1.Size = new Size(672, 328);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Tin mới 1";
@@ -170,9 +171,9 @@
             tabPage2.BackgroundImage = (Image)resources.GetObject("tabPage2.BackgroundImage");
             tabPage2.BackgroundImageLayout = ImageLayout.Zoom;
             tabPage2.Location = new Point(4, 34);
-            tabPage2.Margin = new Padding(4, 4, 4, 4);
+            tabPage2.Margin = new Padding(4);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(4, 4, 4, 4);
+            tabPage2.Padding = new Padding(4);
             tabPage2.Size = new Size(672, 328);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Quy trình";
@@ -183,9 +184,9 @@
             tabPage3.BackgroundImage = (Image)resources.GetObject("tabPage3.BackgroundImage");
             tabPage3.BackgroundImageLayout = ImageLayout.Zoom;
             tabPage3.Location = new Point(4, 34);
-            tabPage3.Margin = new Padding(4, 4, 4, 4);
+            tabPage3.Margin = new Padding(4);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(4, 4, 4, 4);
+            tabPage3.Padding = new Padding(4);
             tabPage3.Size = new Size(672, 328);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Tin mới 2";
@@ -196,7 +197,7 @@
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.InitialImage = (Image)resources.GetObject("pictureBox3.InitialImage");
             pictureBox3.Location = new Point(844, 56);
-            pictureBox3.Margin = new Padding(4, 4, 4, 4);
+            pictureBox3.Margin = new Padding(4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(231, 125);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -208,7 +209,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
             pictureBox2.Location = new Point(562, 56);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(231, 125);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -220,7 +221,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
             pictureBox1.Location = new Point(281, 56);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(231, 125);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -243,7 +244,7 @@
             circlePanel.CircleColor = Color.Gray;
             circlePanel.CircleImage = (Image)resources.GetObject("circlePanel.CircleImage");
             circlePanel.Location = new Point(1000, 10);
-            circlePanel.Margin = new Padding(4, 4, 4, 4);
+            circlePanel.Margin = new Padding(4);
             circlePanel.Name = "circlePanel";
             circlePanel.Size = new Size(38, 38);
             circlePanel.TabIndex = 0;
@@ -251,7 +252,7 @@
             // button1
             // 
             button1.Location = new Point(0, 0);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(118, 36);
             button1.TabIndex = 3;
@@ -279,7 +280,7 @@
             roundPanel2.CornerRadiusTopLeft = 20;
             roundPanel2.CornerRadiusTopRight = 30;
             roundPanel2.Location = new Point(15, 15);
-            roundPanel2.Margin = new Padding(4, 4, 4, 4);
+            roundPanel2.Margin = new Padding(4);
             roundPanel2.Name = "roundPanel2";
             roundPanel2.Size = new Size(215, 80);
             roundPanel2.TabIndex = 1;
@@ -304,10 +305,10 @@
             Controls.Add(roundPanel2);
             Controls.Add(roundPanel);
             Controls.Add(roundPanel1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FormGiaoDienTrong";
             Text = "FormGiaoDienTrong";
-            Load += FormGiaoDienNgoai_Load;
+            //Load += FormGiaoDienNgoai_Load;
             roundPanel.ResumeLayout(false);
             roundPanel1.ResumeLayout(false);
             roundPanel1.PerformLayout();
