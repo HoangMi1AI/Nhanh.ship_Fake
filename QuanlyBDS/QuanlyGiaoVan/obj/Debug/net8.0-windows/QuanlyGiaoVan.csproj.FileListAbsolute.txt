@@ -36,3 +36,6 @@ C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\ref\QuanlyGiaoVan.dll
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormTraCuoc.resources
 C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.Properties.Resources.resources
+C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormDangKy.resources
+C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormDangNhap.resources
+C:\Users\ASUS\phantichTKHT\Nhanh.ship_Fake\QuanlyBDS\QuanlyGiaoVan\obj\Debug\net8.0-windows\QuanlyGiaoVan.FormGiaoDienTrong.resources
