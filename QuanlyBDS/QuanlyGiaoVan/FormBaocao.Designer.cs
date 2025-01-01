@@ -33,16 +33,15 @@
             lblBaocao = new Label();
             Timer_Capnhat = new System.Windows.Forms.Timer(components);
             panel_2 = new Panel();
+            checkBoxTungloai = new CheckBox();
+            checkBoxTatca = new CheckBox();
             dataGridView1 = new DataGridView();
-            comboBox3 = new ComboBox();
-            btnBCXuatkho = new Button();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            lblBaocaonhapkho = new Label();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            btnBCNhapkho = new Button();
+            btnBaocaothoigiaogiaohangtrungbinh = new Button();
+            lblBaocaodonhang = new Label();
+            btnBaocaotinhhinhthitruong = new Button();
+            btnBaocaohieusuatdoitac = new Button();
+            btnBaocaotilekhieunai = new Button();
+            btnBaocaosoluongdonhang = new Button();
             lblLoaibaocao = new Label();
             panel_1 = new Panel();
             label1 = new Label();
@@ -56,10 +55,9 @@
             // 
             lblBaocao.AutoSize = true;
             lblBaocao.Font = new Font("Segoe UI Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBaocao.Location = new Point(99, 12);
-            lblBaocao.Margin = new Padding(4, 0, 4, 0);
+            lblBaocao.Location = new Point(69, 7);
             lblBaocao.Name = "lblBaocao";
-            lblBaocao.Size = new Size(195, 60);
+            lblBaocao.Size = new Size(127, 40);
             lblBaocao.TabIndex = 3;
             lblBaocao.Text = "Báo cáo";
             lblBaocao.TextAlign = ContentAlignment.TopCenter;
@@ -68,140 +66,127 @@
             // 
             panel_2.BackColor = Color.White;
             panel_2.BorderStyle = BorderStyle.FixedSingle;
+            panel_2.Controls.Add(checkBoxTungloai);
+            panel_2.Controls.Add(checkBoxTatca);
             panel_2.Controls.Add(dataGridView1);
-            panel_2.Controls.Add(comboBox3);
-            panel_2.Controls.Add(btnBCXuatkho);
-            panel_2.Controls.Add(comboBox2);
-            panel_2.Controls.Add(comboBox1);
-            panel_2.Controls.Add(lblBaocaonhapkho);
-            panel_2.Controls.Add(button5);
-            panel_2.Controls.Add(button4);
-            panel_2.Controls.Add(button3);
-            panel_2.Controls.Add(btnBCNhapkho);
+            panel_2.Controls.Add(btnBaocaothoigiaogiaohangtrungbinh);
+            panel_2.Controls.Add(lblBaocaodonhang);
+            panel_2.Controls.Add(btnBaocaotinhhinhthitruong);
+            panel_2.Controls.Add(btnBaocaohieusuatdoitac);
+            panel_2.Controls.Add(btnBaocaotilekhieunai);
+            panel_2.Controls.Add(btnBaocaosoluongdonhang);
             panel_2.Controls.Add(lblLoaibaocao);
-            panel_2.Location = new Point(17, 127);
-            panel_2.Margin = new Padding(4, 5, 4, 5);
+            panel_2.Location = new Point(12, 76);
             panel_2.Name = "panel_2";
-            panel_2.Size = new Size(1382, 632);
+            panel_2.Size = new Size(968, 380);
             panel_2.TabIndex = 4;
+            // 
+            // checkBoxTungloai
+            // 
+            checkBoxTungloai.AutoSize = true;
+            checkBoxTungloai.Location = new Point(268, 29);
+            checkBoxTungloai.Name = "checkBoxTungloai";
+            checkBoxTungloai.Size = new Size(147, 19);
+            checkBoxTungloai.TabIndex = 13;
+            checkBoxTungloai.Text = "Theo từng loại báo cáo";
+            checkBoxTungloai.UseVisualStyleBackColor = true;
+            checkBoxTungloai.CheckedChanged += checkBoxTungloai_CheckedChanged;
+            // 
+            // checkBoxTatca
+            // 
+            checkBoxTatca.AutoSize = true;
+            checkBoxTatca.Location = new Point(192, 30);
+            checkBoxTatca.Name = "checkBoxTatca";
+            checkBoxTatca.Size = new Size(57, 19);
+            checkBoxTatca.TabIndex = 12;
+            checkBoxTatca.Text = "Tất cả";
+            checkBoxTatca.UseVisualStyleBackColor = true;
+            checkBoxTatca.CheckedChanged += checkBoxTatca_CheckedChanged;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.FromArgb(224, 224, 224);
             dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(26, 190);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(18, 114);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1330, 412);
+            dataGridView1.Size = new Size(931, 247);
             dataGridView1.TabIndex = 11;
             // 
-            // comboBox3
+            // btnBaocaothoigiaogiaohangtrungbinh
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(700, 117);
-            comboBox3.Margin = new Padding(4, 5, 4, 5);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(200, 33);
-            comboBox3.TabIndex = 10;
-            comboBox3.Text = "Tùy chỉnh cột:";
+            btnBaocaothoigiaogiaohangtrungbinh.FlatStyle = FlatStyle.System;
+            btnBaocaothoigiaogiaohangtrungbinh.Location = new Point(789, 64);
+            btnBaocaothoigiaogiaohangtrungbinh.Name = "btnBaocaothoigiaogiaohangtrungbinh";
+            btnBaocaothoigiaogiaohangtrungbinh.Size = new Size(172, 21);
+            btnBaocaothoigiaogiaohangtrungbinh.TabIndex = 2;
+            btnBaocaothoigiaogiaohangtrungbinh.Text = "Thời gian giao hàng trung bình";
+            btnBaocaothoigiaogiaohangtrungbinh.UseVisualStyleBackColor = true;
+            btnBaocaothoigiaogiaohangtrungbinh.Click += btnBaocaothoigiaogiaohangtrungbinh_Click;
             // 
-            // btnBCXuatkho
+            // lblBaocaodonhang
             // 
-            btnBCXuatkho.FlatStyle = FlatStyle.System;
-            btnBCXuatkho.Location = new Point(1127, 47);
-            btnBCXuatkho.Margin = new Padding(4, 5, 4, 5);
-            btnBCXuatkho.Name = "btnBCXuatkho";
-            btnBCXuatkho.Size = new Size(246, 35);
-            btnBCXuatkho.TabIndex = 2;
-            btnBCXuatkho.Text = "Thời gian giao hàng trung bình";
-            btnBCXuatkho.UseVisualStyleBackColor = true;
+            lblBaocaodonhang.AutoSize = true;
+            lblBaocaodonhang.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBaocaodonhang.Location = new Point(3, 24);
+            lblBaocaodonhang.Name = "lblBaocaodonhang";
+            lblBaocaodonhang.Size = new Size(167, 25);
+            lblBaocaodonhang.TabIndex = 7;
+            lblBaocaodonhang.Text = "Báo cáo đơn hàng";
             // 
-            // comboBox2
+            // btnBaocaotinhhinhthitruong
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(459, 117);
-            comboBox2.Margin = new Padding(4, 5, 4, 5);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(200, 33);
-            comboBox2.TabIndex = 9;
+            btnBaocaotinhhinhthitruong.FlatStyle = FlatStyle.System;
+            btnBaocaotinhhinhthitruong.Location = new Point(627, 63);
+            btnBaocaotinhhinhthitruong.Name = "btnBaocaotinhhinhthitruong";
+            btnBaocaotinhhinhthitruong.Size = new Size(156, 23);
+            btnBaocaotinhhinhthitruong.TabIndex = 5;
+            btnBaocaotinhhinhthitruong.Text = "Báo cáo tình hình thị trường";
+            btnBaocaotinhhinhthitruong.UseVisualStyleBackColor = true;
+            btnBaocaotinhhinhthitruong.Click += btnBaocaotinhhinhthitruong_Click;
             // 
-            // comboBox1
+            // btnBaocaohieusuatdoitac
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Tất cả", "Kho 1", "Kho 2" });
-            comboBox1.Location = new Point(211, 117);
-            comboBox1.Margin = new Padding(4, 5, 4, 5);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(200, 33);
-            comboBox1.TabIndex = 8;
-            comboBox1.Text = "Kho:";
+            btnBaocaohieusuatdoitac.FlatStyle = FlatStyle.System;
+            btnBaocaohieusuatdoitac.Location = new Point(414, 63);
+            btnBaocaohieusuatdoitac.Name = "btnBaocaohieusuatdoitac";
+            btnBaocaohieusuatdoitac.Size = new Size(207, 23);
+            btnBaocaohieusuatdoitac.TabIndex = 4;
+            btnBaocaohieusuatdoitac.Text = "Báo cáo hiệu suất đối tác vận chuyển";
+            btnBaocaohieusuatdoitac.UseVisualStyleBackColor = true;
+            btnBaocaohieusuatdoitac.Click += btnBaocaohieusuatdoitac_Click;
             // 
-            // lblBaocaonhapkho
+            // btnBaocaotilekhieunai
             // 
-            lblBaocaonhapkho.AutoSize = true;
-            lblBaocaonhapkho.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBaocaonhapkho.Location = new Point(4, 113);
-            lblBaocaonhapkho.Margin = new Padding(4, 0, 4, 0);
-            lblBaocaonhapkho.Name = "lblBaocaonhapkho";
-            lblBaocaonhapkho.Size = new Size(202, 40);
-            lblBaocaonhapkho.TabIndex = 7;
-            lblBaocaonhapkho.Text = "Báo đơn hàng";
+            btnBaocaotilekhieunai.FlatStyle = FlatStyle.System;
+            btnBaocaotilekhieunai.Location = new Point(285, 63);
+            btnBaocaotilekhieunai.Name = "btnBaocaotilekhieunai";
+            btnBaocaotilekhieunai.Size = new Size(123, 23);
+            btnBaocaotilekhieunai.TabIndex = 3;
+            btnBaocaotilekhieunai.Text = "Báo cáo tỉ lệ khiếu nại";
+            btnBaocaotilekhieunai.UseVisualStyleBackColor = true;
+            btnBaocaotilekhieunai.Click += btnBaocaotilekhieunai_Click;
             // 
-            // button5
+            // btnBaocaosoluongdonhang
             // 
-            button5.FlatStyle = FlatStyle.System;
-            button5.Location = new Point(896, 45);
-            button5.Margin = new Padding(4, 5, 4, 5);
-            button5.Name = "button5";
-            button5.Size = new Size(223, 38);
-            button5.TabIndex = 5;
-            button5.Text = "Báo cáo tình hình thị trường";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.FlatStyle = FlatStyle.System;
-            button4.Location = new Point(591, 45);
-            button4.Margin = new Padding(4, 5, 4, 5);
-            button4.Name = "button4";
-            button4.Size = new Size(296, 38);
-            button4.TabIndex = 4;
-            button4.Text = "Báo cáo hiệu suất đối tác vận chuyển";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.FlatStyle = FlatStyle.System;
-            button3.Location = new Point(407, 47);
-            button3.Margin = new Padding(4, 5, 4, 5);
-            button3.Name = "button3";
-            button3.Size = new Size(176, 38);
-            button3.TabIndex = 3;
-            button3.Text = "Báo cáo tỉ lệ khiếu nại";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // btnBCNhapkho
-            // 
-            btnBCNhapkho.FlatStyle = FlatStyle.System;
-            btnBCNhapkho.Location = new Point(194, 47);
-            btnBCNhapkho.Margin = new Padding(4, 5, 4, 5);
-            btnBCNhapkho.Name = "btnBCNhapkho";
-            btnBCNhapkho.Size = new Size(230, 38);
-            btnBCNhapkho.TabIndex = 1;
-            btnBCNhapkho.Text = "Báo cáo số lượng đơn hàng";
-            btnBCNhapkho.UseVisualStyleBackColor = true;
-            btnBCNhapkho.Click += btnBCNhapkho_Click;
+            btnBaocaosoluongdonhang.BackColor = Color.Transparent;
+            btnBaocaosoluongdonhang.FlatStyle = FlatStyle.System;
+            btnBaocaosoluongdonhang.ForeColor = Color.White;
+            btnBaocaosoluongdonhang.Location = new Point(118, 63);
+            btnBaocaosoluongdonhang.Name = "btnBaocaosoluongdonhang";
+            btnBaocaosoluongdonhang.Size = new Size(161, 23);
+            btnBaocaosoluongdonhang.TabIndex = 1;
+            btnBaocaosoluongdonhang.Text = "Báo cáo số lượng đơn hàng";
+            btnBaocaosoluongdonhang.UseVisualStyleBackColor = false;
+            btnBaocaosoluongdonhang.Click += btnBaocaosoluongdonhang_Click;
             // 
             // lblLoaibaocao
             // 
             lblLoaibaocao.AutoSize = true;
             lblLoaibaocao.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLoaibaocao.Location = new Point(4, 42);
-            lblLoaibaocao.Margin = new Padding(4, 0, 4, 0);
+            lblLoaibaocao.Location = new Point(3, 61);
             lblLoaibaocao.Name = "lblLoaibaocao";
-            lblLoaibaocao.Size = new Size(182, 40);
+            lblLoaibaocao.Size = new Size(119, 25);
             lblLoaibaocao.TabIndex = 0;
             lblLoaibaocao.Text = "Loại báo cáo";
             // 
@@ -210,20 +195,18 @@
             panel_1.BackColor = Color.White;
             panel_1.Controls.Add(label1);
             panel_1.Controls.Add(lblBaocao);
-            panel_1.Location = new Point(-9, -2);
-            panel_1.Margin = new Padding(4, 5, 4, 5);
+            panel_1.Location = new Point(-6, -1);
             panel_1.Name = "panel_1";
-            panel_1.Size = new Size(1446, 97);
+            panel_1.Size = new Size(1012, 58);
             panel_1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Image = (Image)resources.GetObject("label1.Image");
-            label1.Location = new Point(20, 12);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(14, 7);
             label1.Name = "label1";
-            label1.Size = new Size(82, 75);
+            label1.Size = new Size(49, 45);
             label1.TabIndex = 6;
             label1.Text = "       \r\n\r\n              ";
             // 
@@ -232,26 +215,26 @@
             button1.BackColor = Color.DimGray;
             button1.FlatStyle = FlatStyle.System;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(1189, 770);
-            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Location = new Point(832, 462);
             button1.Name = "button1";
-            button1.Size = new Size(189, 58);
+            button1.Size = new Size(132, 35);
             button1.TabIndex = 5;
             button1.Text = "Xuất báo cáo";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // FormBaocao
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Gainsboro;
-            ClientSize = new Size(1417, 853);
+            ClientSize = new Size(992, 512);
             Controls.Add(button1);
             Controls.Add(panel_1);
             Controls.Add(panel_2);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "FormBaocao";
             Text = "FormBaocao";
+            Load += FormBaocao_Load;
             panel_2.ResumeLayout(false);
             panel_2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -266,17 +249,18 @@
         private Panel panel_2;
         private Panel panel_1;
         private Label lblLoaibaocao;
-        private Button btnBCNhapkho;
-        private Button button5;
-        private Button button4;
-        private Button button3;
+        private Button btnBaocaosoluongdonhang;
+        private Button btnBaocaotinhhinhthitruong;
+        private Button btnBaocaohieusuatdoitac;
+        private Button btnBaocaotilekhieunai;
         private DataGridView dataGridView1;
         private ComboBox comboBox3;
         private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private Label lblBaocaonhapkho;
+        private Label lblBaocaodonhang;
         private Button button1;
         private Label label1;
-        private Button btnBCXuatkho;
+        private Button btnBaocaothoigiaogiaohangtrungbinh;
+        private CheckBox checkBoxTungloai;
+        private CheckBox checkBoxTatca;
     }
 }

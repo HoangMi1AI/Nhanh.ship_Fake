@@ -126,11 +126,31 @@
             var confirm = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm == DialogResult.Yes)
             {
-              
+
                 FormGiaoDienNgoai formGiaoDienNgoai = new FormGiaoDienNgoai();
                 formGiaoDienNgoai.Show();
                 this.Close(); // Đóng form chính sau khi thoát
             }
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            // Tạo một instance của formbaocao
+            FormBaocao formBaocao = new FormBaocao();   
+
+            // Đăng ký sự kiện FormClosed cho 
+            formBaocao.FormClosed += (s, args) =>
+            {
+
+                this.Show();
+
+            };
+
+            // Hiển thị 
+            formBaocao.Show();
+
+            // Ẩn 
+            this.Hide();
         }
     }
 }
