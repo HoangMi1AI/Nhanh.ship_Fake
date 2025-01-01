@@ -75,13 +75,12 @@ namespace QuanlyGiaoVan
         }
         public async Task CreateShippingOrder(string toName, string toPhone,
     string toAddress, string toWardCode, int toDistrictId, int weight,
-    int length, int width, int height, List<object> items)
+    int length, int width, int height, string required_note)
         {
             var requestPayload = new
             {
                 shop_id = 5559346,
                 payment_type_id = 1,
-                required_note = "KHONGCHOXEMHANG",
                 to_name = toName,
                 to_phone = toPhone,
                 to_address = toAddress,//"72 Thành Thái, Phường 14, Quận 10, Hồ Chí Minh, Vietnam"
@@ -92,24 +91,26 @@ namespace QuanlyGiaoVan
                 width = width,
                 height = height,
                 service_type_id = 2,
-               items = items,//new[]
-        //        {
-        //    new
-        //    {
-        //        name = "Áo Polo",
-        //        code = "Polo123",
-        //        quantity = 1,
-        //        price = 200000,
-        //        length = 12,
-        //        width = 12,
-        //        weight = 1200,
-        //        height = 12,
-        //        category = new
-        //        {
-        //            level1 = "Áo"
-        //        }
-        //    }
-        //},
+                required_note = required_note,
+                items =
+                new[]
+                                {
+                            new
+                            {
+                                name = "Áo Polo",
+                                code = "Polo123",
+                                quantity = 1,
+                                price = 200000,
+                                length = 12,
+                                width = 12,
+                                weight = 1200,
+                                height = 12,
+                                category = new
+                                {
+                                    level1 = "Áo"
+                                }
+                            }
+                        },
                 quantity = 1
             };
 

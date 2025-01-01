@@ -4,6 +4,9 @@
     <Compile Update="Class_FE.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="FormBaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormXacNhanDonHang.cs">
       <SubType>Form</SubType>
     </Compile>

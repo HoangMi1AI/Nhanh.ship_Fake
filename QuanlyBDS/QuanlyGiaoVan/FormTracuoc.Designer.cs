@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTraCuoc));
             label1 = new Label();
             cboProvincesgui = new ComboBox();
             button1 = new Button();
@@ -53,7 +54,6 @@
             button4 = new Button();
             cboWardsgui = new ComboBox();
             cboWardsnhan = new ComboBox();
-            test = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -77,7 +77,7 @@
             cboProvincesgui.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboProvincesgui.FormattingEnabled = true;
             cboProvincesgui.Location = new Point(99, 104);
-            cboProvincesgui.Margin = new Padding(2, 2, 2, 2);
+            cboProvincesgui.Margin = new Padding(2);
             cboProvincesgui.Name = "cboProvincesgui";
             cboProvincesgui.Size = new Size(252, 31);
             cboProvincesgui.TabIndex = 1;
@@ -88,7 +88,7 @@
             // 
             button1.Enabled = false;
             button1.Location = new Point(248, 269);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(102, 29);
             button1.TabIndex = 2;
@@ -120,7 +120,7 @@
             cboDistrictsgui.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboDistrictsgui.FormattingEnabled = true;
             cboDistrictsgui.Location = new Point(99, 159);
-            cboDistrictsgui.Margin = new Padding(2, 2, 2, 2);
+            cboDistrictsgui.Margin = new Padding(2);
             cboDistrictsgui.Name = "cboDistrictsgui";
             cboDistrictsgui.Size = new Size(252, 31);
             cboDistrictsgui.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             txtKL.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtKL.Location = new Point(99, 269);
-            txtKL.Margin = new Padding(2, 2, 2, 2);
+            txtKL.Margin = new Padding(2);
             txtKL.Name = "txtKL";
             txtKL.PlaceholderText = "Khối lượng gói hàng";
             txtKL.Size = new Size(206, 30);
@@ -163,7 +163,7 @@
             // 
             txtTTH.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTTH.Location = new Point(486, 269);
-            txtTTH.Margin = new Padding(2, 2, 2, 2);
+            txtTTH.Margin = new Padding(2);
             txtTTH.Name = "txtTTH";
             txtTTH.PlaceholderText = "Tiền thu hộ";
             txtTTH.Size = new Size(206, 30);
@@ -174,7 +174,7 @@
             cboDistrictsnhan.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboDistrictsnhan.FormattingEnabled = true;
             cboDistrictsnhan.Location = new Point(486, 159);
-            cboDistrictsnhan.Margin = new Padding(2, 2, 2, 2);
+            cboDistrictsnhan.Margin = new Padding(2);
             cboDistrictsnhan.Name = "cboDistrictsnhan";
             cboDistrictsnhan.Size = new Size(252, 31);
             cboDistrictsnhan.TabIndex = 14;
@@ -185,7 +185,7 @@
             // 
             button2.Enabled = false;
             button2.Location = new Point(634, 268);
-            button2.Margin = new Padding(2, 2, 2, 2);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(102, 29);
             button2.TabIndex = 13;
@@ -197,7 +197,7 @@
             cboProvincesnhan.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboProvincesnhan.FormattingEnabled = true;
             cboProvincesnhan.Location = new Point(486, 104);
-            cboProvincesnhan.Margin = new Padding(2, 2, 2, 2);
+            cboProvincesnhan.Margin = new Padding(2);
             cboProvincesnhan.Name = "cboProvincesnhan";
             cboProvincesnhan.Size = new Size(252, 31);
             cboProvincesnhan.TabIndex = 12;
@@ -208,7 +208,7 @@
             // 
             btnTra.BackColor = Color.PaleGreen;
             btnTra.Location = new Point(369, 317);
-            btnTra.Margin = new Padding(2, 2, 2, 2);
+            btnTra.Margin = new Padding(2);
             btnTra.Name = "btnTra";
             btnTra.Size = new Size(102, 29);
             btnTra.TabIndex = 17;
@@ -226,8 +226,8 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(button4);
-            panel1.Location = new Point(17, 355);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Location = new Point(11, 71);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(835, 346);
             panel1.TabIndex = 18;
@@ -246,9 +246,9 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.vt;
-            pictureBox3.Location = new Point(33, 82);
-            pictureBox3.Margin = new Padding(2, 2, 2, 2);
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(33, 86);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(68, 45);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -258,7 +258,7 @@
             // btnBack
             // 
             btnBack.Location = new Point(439, 288);
-            btnBack.Margin = new Padding(2, 2, 2, 2);
+            btnBack.Margin = new Padding(2);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(90, 28);
             btnBack.TabIndex = 6;
@@ -292,7 +292,7 @@
             // 
             pictureBox2.Image = Properties.Resources.vt;
             pictureBox2.Location = new Point(33, 151);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(68, 41);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -303,7 +303,7 @@
             // 
             pictureBox1.Image = Properties.Resources.ghn;
             pictureBox1.Location = new Point(33, 31);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(68, 41);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -313,7 +313,7 @@
             // button4
             // 
             button4.Location = new Point(255, 288);
-            button4.Margin = new Padding(2, 2, 2, 2);
+            button4.Margin = new Padding(2);
             button4.Name = "button4";
             button4.Size = new Size(92, 29);
             button4.TabIndex = 1;
@@ -326,7 +326,7 @@
             cboWardsgui.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboWardsgui.FormattingEnabled = true;
             cboWardsgui.Location = new Point(99, 215);
-            cboWardsgui.Margin = new Padding(2, 2, 2, 2);
+            cboWardsgui.Margin = new Padding(2);
             cboWardsgui.Name = "cboWardsgui";
             cboWardsgui.Size = new Size(252, 31);
             cboWardsgui.TabIndex = 20;
@@ -337,22 +337,11 @@
             cboWardsnhan.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboWardsnhan.FormattingEnabled = true;
             cboWardsnhan.Location = new Point(486, 215);
-            cboWardsnhan.Margin = new Padding(2, 2, 2, 2);
+            cboWardsnhan.Margin = new Padding(2);
             cboWardsnhan.Name = "cboWardsnhan";
             cboWardsnhan.Size = new Size(252, 31);
             cboWardsnhan.TabIndex = 21;
             cboWardsnhan.Text = "    - Xã/Phường -";
-            // 
-            // test
-            // 
-            test.BackColor = Color.PaleGreen;
-            test.Location = new Point(572, 317);
-            test.Margin = new Padding(2, 2, 2, 2);
-            test.Name = "test";
-            test.Size = new Size(102, 29);
-            test.TabIndex = 22;
-            test.Text = "Tra cước";
-            test.UseVisualStyleBackColor = false;
             // 
             // FormTraCuoc
             // 
@@ -360,7 +349,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(850, 559);
             Controls.Add(panel1);
-            Controls.Add(test);
             Controls.Add(cboWardsnhan);
             Controls.Add(cboWardsgui);
             Controls.Add(btnTra);
@@ -377,7 +365,7 @@
             Controls.Add(button1);
             Controls.Add(cboProvincesgui);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormTraCuoc";
             Text = "Tra_cước";
             Load += Tra_cước_Load;
@@ -417,6 +405,5 @@
         private Button btnBack;
         private Label lbGHTK;
         private PictureBox pictureBox3;
-        private Button test;
     }
 }
