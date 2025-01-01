@@ -38,7 +38,6 @@
             comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
             lblBaocaonhapkho = new Label();
-            button6 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
@@ -46,8 +45,8 @@
             lblLoaibaocao = new Label();
             panel_1 = new Panel();
             label1 = new Label();
-            button1 = new Button();
             btnBCXuatkho = new Button();
+            button1 = new Button();
             panel_2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel_1.SuspendLayout();
@@ -57,7 +56,7 @@
             // 
             lblBaocao.AutoSize = true;
             lblBaocao.Font = new Font("Segoe UI Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBaocao.Location = new Point(86, 10);
+            lblBaocao.Location = new Point(69, 7);
             lblBaocao.Name = "lblBaocao";
             lblBaocao.Size = new Size(127, 40);
             lblBaocao.TabIndex = 3;
@@ -70,6 +69,7 @@
             panel_2.BorderStyle = BorderStyle.FixedSingle;
             panel_2.Controls.Add(dataGridView1);
             panel_2.Controls.Add(comboBox3);
+            panel_2.Controls.Add(btnBCXuatkho);
             panel_2.Controls.Add(comboBox2);
             panel_2.Controls.Add(comboBox1);
             panel_2.Controls.Add(lblBaocaonhapkho);
@@ -80,7 +80,7 @@
             panel_2.Controls.Add(lblLoaibaocao);
             panel_2.Location = new Point(12, 76);
             panel_2.Name = "panel_2";
-            panel_2.Size = new Size(910, 347);
+            panel_2.Size = new Size(968, 380);
             panel_2.TabIndex = 4;
             // 
             // dataGridView1
@@ -90,13 +90,13 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(18, 114);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(869, 212);
+            dataGridView1.Size = new Size(931, 247);
             dataGridView1.TabIndex = 11;
             // 
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(540, 70);
+            comboBox3.Location = new Point(490, 70);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(141, 23);
             comboBox3.TabIndex = 10;
@@ -105,7 +105,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(369, 70);
+            comboBox2.Location = new Point(321, 70);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(141, 23);
             comboBox2.TabIndex = 9;
@@ -114,7 +114,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Tất cả", "Kho 1", "Kho 2" });
-            comboBox1.Location = new Point(201, 70);
+            comboBox1.Location = new Point(148, 70);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(141, 23);
             comboBox1.TabIndex = 8;
@@ -124,26 +124,16 @@
             // 
             lblBaocaonhapkho.AutoSize = true;
             lblBaocaonhapkho.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBaocaonhapkho.Location = new Point(12, 70);
+            lblBaocaonhapkho.Location = new Point(3, 68);
             lblBaocaonhapkho.Name = "lblBaocaonhapkho";
-            lblBaocaonhapkho.Size = new Size(164, 25);
+            lblBaocaonhapkho.Size = new Size(132, 25);
             lblBaocaonhapkho.TabIndex = 7;
-            lblBaocaonhapkho.Text = "Báo cáo nhập kho";
-            // 
-            // button6
-            // 
-            button6.FlatStyle = FlatStyle.System;
-            button6.Location = new Point(770, 32);
-            button6.Name = "button6";
-            button6.Size = new Size(110, 23);
-            button6.TabIndex = 6;
-            button6.Text = "Cảnh báo hết hàng";
-            button6.UseVisualStyleBackColor = true;
+            lblBaocaonhapkho.Text = "Báo đơn hàng";
             // 
             // button5
             // 
             button5.FlatStyle = FlatStyle.System;
-            button5.Location = new Point(674, 28);
+            button5.Location = new Point(627, 27);
             button5.Name = "button5";
             button5.Size = new Size(156, 23);
             button5.TabIndex = 5;
@@ -153,7 +143,7 @@
             // button4
             // 
             button4.FlatStyle = FlatStyle.System;
-            button4.Location = new Point(446, 28);
+            button4.Location = new Point(414, 27);
             button4.Name = "button4";
             button4.Size = new Size(207, 23);
             button4.TabIndex = 4;
@@ -163,7 +153,7 @@
             // button3
             // 
             button3.FlatStyle = FlatStyle.System;
-            button3.Location = new Point(317, 29);
+            button3.Location = new Point(285, 27);
             button3.Name = "button3";
             button3.Size = new Size(123, 23);
             button3.TabIndex = 3;
@@ -173,18 +163,19 @@
             // btnBCNhapkho
             // 
             btnBCNhapkho.FlatStyle = FlatStyle.System;
-            btnBCNhapkho.Location = new Point(150, 28);
+            btnBCNhapkho.Location = new Point(118, 27);
             btnBCNhapkho.Name = "btnBCNhapkho";
             btnBCNhapkho.Size = new Size(161, 23);
             btnBCNhapkho.TabIndex = 1;
             btnBCNhapkho.Text = "Báo cáo số lượng đơn hàng";
             btnBCNhapkho.UseVisualStyleBackColor = true;
+            btnBCNhapkho.Click += btnBCNhapkho_Click;
             // 
             // lblLoaibaocao
             // 
             lblLoaibaocao.AutoSize = true;
             lblLoaibaocao.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLoaibaocao.Location = new Point(12, 25);
+            lblLoaibaocao.Location = new Point(3, 25);
             lblLoaibaocao.Name = "lblLoaibaocao";
             lblLoaibaocao.Size = new Size(119, 25);
             lblLoaibaocao.TabIndex = 0;
@@ -195,51 +186,49 @@
             panel_1.BackColor = Color.White;
             panel_1.Controls.Add(label1);
             panel_1.Controls.Add(lblBaocao);
-            panel_1.Controls.Add(btnBCXuatkho);
-            panel_1.Controls.Add(button6);
             panel_1.Location = new Point(-6, -1);
             panel_1.Name = "panel_1";
-            panel_1.Size = new Size(946, 58);
+            panel_1.Size = new Size(1012, 58);
             panel_1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Image = (Image)resources.GetObject("label1.Image");
-            label1.Location = new Point(31, 10);
+            label1.Location = new Point(14, 7);
             label1.Name = "label1";
             label1.Size = new Size(49, 45);
             label1.TabIndex = 6;
             label1.Text = "       \r\n\r\n              ";
+            // 
+            // btnBCXuatkho
+            // 
+            btnBCXuatkho.FlatStyle = FlatStyle.System;
+            btnBCXuatkho.Location = new Point(789, 28);
+            btnBCXuatkho.Name = "btnBCXuatkho";
+            btnBCXuatkho.Size = new Size(172, 21);
+            btnBCXuatkho.TabIndex = 2;
+            btnBCXuatkho.Text = "Thời gian giao hàng trung bình";
+            btnBCXuatkho.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             button1.BackColor = Color.DimGray;
             button1.FlatStyle = FlatStyle.System;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(755, 429);
+            button1.Location = new Point(832, 462);
             button1.Name = "button1";
             button1.Size = new Size(132, 35);
             button1.TabIndex = 5;
             button1.Text = "Xuất báo cáo";
             button1.UseVisualStyleBackColor = false;
             // 
-            // btnBCXuatkho
-            // 
-            btnBCXuatkho.FlatStyle = FlatStyle.System;
-            btnBCXuatkho.Location = new Point(480, 26);
-            btnBCXuatkho.Name = "btnBCXuatkho";
-            btnBCXuatkho.Size = new Size(239, 23);
-            btnBCXuatkho.TabIndex = 2;
-            btnBCXuatkho.Text = "Báo cáo thời gian giao hàng trung bình";
-            btnBCXuatkho.UseVisualStyleBackColor = true;
-            // 
             // FormBaocao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Gainsboro;
-            ClientSize = new Size(934, 476);
+            ClientSize = new Size(992, 512);
             Controls.Add(button1);
             Controls.Add(panel_1);
             Controls.Add(panel_2);
@@ -260,7 +249,6 @@
         private Panel panel_1;
         private Label lblLoaibaocao;
         private Button btnBCNhapkho;
-        private Button button6;
         private Button button5;
         private Button button4;
         private Button button3;

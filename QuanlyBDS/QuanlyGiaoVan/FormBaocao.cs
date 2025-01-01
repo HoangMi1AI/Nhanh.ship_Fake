@@ -16,5 +16,10 @@ namespace QuanlyGiaoVan
         {
             InitializeComponent();
         }
+
+        private void btnBCNhapkho_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
