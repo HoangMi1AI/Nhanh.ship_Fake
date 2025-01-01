@@ -10,10 +10,8 @@
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ConnectDB connector = new ConnectDB();
-            connector.connectDB();
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormGiaoDienTrong());
+            Application.Run(new FormTaoDonHang());
         }
     }
 }
