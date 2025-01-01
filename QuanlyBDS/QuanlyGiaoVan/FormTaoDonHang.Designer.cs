@@ -36,7 +36,7 @@
             label4 = new Label();
             txtBox_username = new TextBox();
             groupBox2 = new GroupBox();
-            dateTimePicker1 = new DateTimePicker();
+            datePicker_estimate_delivery_date = new DateTimePicker();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
@@ -48,16 +48,12 @@
             cbBox_to_province = new ComboBox();
             txtBox_to_number = new TextBox();
             gbTThangHoa = new GroupBox();
-            radioBtn_khong_xem = new RadioButton();
-            radioBtn_cho_xem_khong_thu = new RadioButton();
             txtBox_length = new TextBox();
-            radioBtn_cho_thu_hang = new RadioButton();
             txtBox_width = new TextBox();
-            label11 = new Label();
             txtBox_height = new TextBox();
-            checkBox6 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox4 = new CheckBox();
+            tick_Giayto_Hoadon = new CheckBox();
+            tick_Nguyen_khoi = new CheckBox();
+            tick_Gia_tri_cao = new CheckBox();
             tick_Tu_kinh_pin = new CheckBox();
             tick_De_vo = new CheckBox();
             tick_chat_long = new CheckBox();
@@ -70,6 +66,10 @@
             radioBtn_Tailieu = new RadioButton();
             radioBtn_Buukien = new RadioButton();
             label1 = new Label();
+            radioBtn_khong_xem = new RadioButton();
+            radioBtn_cho_xem_khong_thu = new RadioButton();
+            radioBtn_cho_thu_hang = new RadioButton();
+            label11 = new Label();
             btnNextpageTaoDon = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -143,7 +143,6 @@
             label4.Size = new Size(113, 24);
             label4.TabIndex = 19;
             label4.Text = "Tên người gửi";
-            label4.Click += label4_Click;
             // 
             // txtBox_username
             // 
@@ -158,7 +157,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(dateTimePicker1);
+            groupBox2.Controls.Add(datePicker_estimate_delivery_date);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label7);
@@ -179,13 +178,13 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Người nhận";
             // 
-            // dateTimePicker1
+            // datePicker_estimate_delivery_date
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(127, 282);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(146, 30);
-            dateTimePicker1.TabIndex = 24;
+            datePicker_estimate_delivery_date.Format = DateTimePickerFormat.Short;
+            datePicker_estimate_delivery_date.Location = new Point(127, 282);
+            datePicker_estimate_delivery_date.Name = "datePicker_estimate_delivery_date";
+            datePicker_estimate_delivery_date.Size = new Size(146, 30);
+            datePicker_estimate_delivery_date.TabIndex = 24;
             // 
             // label9
             // 
@@ -301,9 +300,9 @@
             gbTThangHoa.Controls.Add(txtBox_length);
             gbTThangHoa.Controls.Add(txtBox_width);
             gbTThangHoa.Controls.Add(txtBox_height);
-            gbTThangHoa.Controls.Add(checkBox6);
-            gbTThangHoa.Controls.Add(checkBox5);
-            gbTThangHoa.Controls.Add(checkBox4);
+            gbTThangHoa.Controls.Add(tick_Giayto_Hoadon);
+            gbTThangHoa.Controls.Add(tick_Nguyen_khoi);
+            gbTThangHoa.Controls.Add(tick_Gia_tri_cao);
             gbTThangHoa.Controls.Add(tick_Tu_kinh_pin);
             gbTThangHoa.Controls.Add(tick_De_vo);
             gbTThangHoa.Controls.Add(tick_chat_long);
@@ -326,31 +325,6 @@
             gbTThangHoa.TabStop = false;
             gbTThangHoa.Text = "Thông tin hàng hóa";
             // 
-            // radioBtn_khong_xem
-            // 
-            radioBtn_khong_xem.AutoSize = true;
-            radioBtn_khong_xem.Location = new Point(706, 488);
-            radioBtn_khong_xem.Margin = new Padding(2);
-            radioBtn_khong_xem.Name = "radioBtn_khong_xem";
-            radioBtn_khong_xem.Size = new Size(105, 24);
-            radioBtn_khong_xem.TabIndex = 44;
-            radioBtn_khong_xem.TabStop = true;
-            radioBtn_khong_xem.Text = "Không xem";
-            radioBtn_khong_xem.UseVisualStyleBackColor = true;
-            radioBtn_khong_xem.CheckedChanged += radioButton4_CheckedChanged;
-            // 
-            // radioBtn_cho_xem_khong_thu
-            // 
-            radioBtn_cho_xem_khong_thu.AutoSize = true;
-            radioBtn_cho_xem_khong_thu.Location = new Point(502, 531);
-            radioBtn_cho_xem_khong_thu.Margin = new Padding(2);
-            radioBtn_cho_xem_khong_thu.Name = "radioBtn_cho_xem_khong_thu";
-            radioBtn_cho_xem_khong_thu.Size = new Size(162, 24);
-            radioBtn_cho_xem_khong_thu.TabIndex = 42;
-            radioBtn_cho_xem_khong_thu.TabStop = true;
-            radioBtn_cho_xem_khong_thu.Text = "Cho xem, không thử";
-            radioBtn_cho_xem_khong_thu.UseVisualStyleBackColor = true;
-            // 
             // txtBox_length
             // 
             txtBox_length.Location = new Point(242, 155);
@@ -360,19 +334,6 @@
             txtBox_length.PlaceholderText = "Chiều dài ";
             txtBox_length.Size = new Size(97, 28);
             txtBox_length.TabIndex = 39;
-            // 
-            // radioBtn_cho_thu_hang
-            // 
-            radioBtn_cho_thu_hang.AutoSize = true;
-            radioBtn_cho_thu_hang.Location = new Point(502, 488);
-            radioBtn_cho_thu_hang.Margin = new Padding(2);
-            radioBtn_cho_thu_hang.Name = "radioBtn_cho_thu_hang";
-            radioBtn_cho_thu_hang.Size = new Size(119, 24);
-            radioBtn_cho_thu_hang.TabIndex = 41;
-            radioBtn_cho_thu_hang.TabStop = true;
-            radioBtn_cho_thu_hang.Text = "Cho thử hàng";
-            radioBtn_cho_thu_hang.UseVisualStyleBackColor = true;
-            radioBtn_cho_thu_hang.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // txtBox_width
             // 
@@ -384,17 +345,6 @@
             txtBox_width.Size = new Size(97, 28);
             txtBox_width.TabIndex = 38;
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(475, 452);
-            label11.Margin = new Padding(2, 0, 2, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(113, 23);
-            label11.TabIndex = 40;
-            label11.Text = "Loại ghi chú";
-            // 
             // txtBox_height
             // 
             txtBox_height.Location = new Point(82, 197);
@@ -405,38 +355,38 @@
             txtBox_height.Size = new Size(97, 28);
             txtBox_height.TabIndex = 37;
             // 
-            // checkBox6
+            // tick_Giayto_Hoadon
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(279, 354);
-            checkBox6.Margin = new Padding(2);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(97, 52);
-            checkBox6.TabIndex = 36;
-            checkBox6.Text = "Giấy tờ/\r\nHóa đơn\r\n";
-            checkBox6.UseVisualStyleBackColor = true;
+            tick_Giayto_Hoadon.AutoSize = true;
+            tick_Giayto_Hoadon.Location = new Point(279, 354);
+            tick_Giayto_Hoadon.Margin = new Padding(2);
+            tick_Giayto_Hoadon.Name = "tick_Giayto_Hoadon";
+            tick_Giayto_Hoadon.Size = new Size(97, 52);
+            tick_Giayto_Hoadon.TabIndex = 36;
+            tick_Giayto_Hoadon.Text = "Giấy tờ/\r\nHóa đơn\r\n";
+            tick_Giayto_Hoadon.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // tick_Nguyen_khoi
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(153, 364);
-            checkBox5.Margin = new Padding(2);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(128, 28);
-            checkBox5.TabIndex = 35;
-            checkBox5.Text = "Nguyên khối";
-            checkBox5.UseVisualStyleBackColor = true;
+            tick_Nguyen_khoi.AutoSize = true;
+            tick_Nguyen_khoi.Location = new Point(153, 364);
+            tick_Nguyen_khoi.Margin = new Padding(2);
+            tick_Nguyen_khoi.Name = "tick_Nguyen_khoi";
+            tick_Nguyen_khoi.Size = new Size(128, 28);
+            tick_Nguyen_khoi.TabIndex = 35;
+            tick_Nguyen_khoi.Text = "Nguyên khối";
+            tick_Nguyen_khoi.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // tick_Gia_tri_cao
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(21, 364);
-            checkBox4.Margin = new Padding(2);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(111, 28);
-            checkBox4.TabIndex = 34;
-            checkBox4.Text = "Giá trị cao";
-            checkBox4.UseVisualStyleBackColor = true;
+            tick_Gia_tri_cao.AutoSize = true;
+            tick_Gia_tri_cao.Location = new Point(21, 364);
+            tick_Gia_tri_cao.Margin = new Padding(2);
+            tick_Gia_tri_cao.Name = "tick_Gia_tri_cao";
+            tick_Gia_tri_cao.Size = new Size(111, 28);
+            tick_Gia_tri_cao.TabIndex = 34;
+            tick_Gia_tri_cao.Text = "Giá trị cao";
+            tick_Gia_tri_cao.UseVisualStyleBackColor = true;
             // 
             // tick_Tu_kinh_pin
             // 
@@ -545,7 +495,6 @@
             radioBtn_Tailieu.TabStop = true;
             radioBtn_Tailieu.Text = "Tài liệu";
             radioBtn_Tailieu.UseVisualStyleBackColor = true;
-            radioBtn_Tailieu.CheckedChanged += radioBtn_Tailieu_CheckedChanged;
             // 
             // radioBtn_Buukien
             // 
@@ -569,6 +518,53 @@
             label1.Size = new Size(128, 23);
             label1.TabIndex = 14;
             label1.Text = "Loại hàng hóa";
+            // 
+            // radioBtn_khong_xem
+            // 
+            radioBtn_khong_xem.AutoSize = true;
+            radioBtn_khong_xem.Location = new Point(706, 488);
+            radioBtn_khong_xem.Margin = new Padding(2);
+            radioBtn_khong_xem.Name = "radioBtn_khong_xem";
+            radioBtn_khong_xem.Size = new Size(105, 24);
+            radioBtn_khong_xem.TabIndex = 44;
+            radioBtn_khong_xem.TabStop = true;
+            radioBtn_khong_xem.Text = "Không xem";
+            radioBtn_khong_xem.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_cho_xem_khong_thu
+            // 
+            radioBtn_cho_xem_khong_thu.AutoSize = true;
+            radioBtn_cho_xem_khong_thu.Location = new Point(502, 531);
+            radioBtn_cho_xem_khong_thu.Margin = new Padding(2);
+            radioBtn_cho_xem_khong_thu.Name = "radioBtn_cho_xem_khong_thu";
+            radioBtn_cho_xem_khong_thu.Size = new Size(162, 24);
+            radioBtn_cho_xem_khong_thu.TabIndex = 42;
+            radioBtn_cho_xem_khong_thu.TabStop = true;
+            radioBtn_cho_xem_khong_thu.Text = "Cho xem, không thử";
+            radioBtn_cho_xem_khong_thu.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_cho_thu_hang
+            // 
+            radioBtn_cho_thu_hang.AutoSize = true;
+            radioBtn_cho_thu_hang.Location = new Point(502, 488);
+            radioBtn_cho_thu_hang.Margin = new Padding(2);
+            radioBtn_cho_thu_hang.Name = "radioBtn_cho_thu_hang";
+            radioBtn_cho_thu_hang.Size = new Size(119, 24);
+            radioBtn_cho_thu_hang.TabIndex = 41;
+            radioBtn_cho_thu_hang.TabStop = true;
+            radioBtn_cho_thu_hang.Text = "Cho thử hàng";
+            radioBtn_cho_thu_hang.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(475, 452);
+            label11.Margin = new Padding(2, 0, 2, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(113, 23);
+            label11.TabIndex = 40;
+            label11.Text = "Loại ghi chú";
             // 
             // btnNextpageTaoDon
             // 
@@ -598,7 +594,6 @@
             Margin = new Padding(2);
             Name = "FormTaoDonHang";
             Text = "FormTaoDonHang";
-            Load += FormTaoDonHang_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -638,13 +633,13 @@
         private TextBox txtBox_value;
         private Label label15;
         private Label label14;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
+        private CheckBox tick_Nguyen_khoi;
+        private CheckBox tick_Gia_tri_cao;
         private CheckBox tick_Tu_kinh_pin;
         private CheckBox tick_chat_long;
         private CheckBox tick_De_vo;
+        private CheckBox tick_Giayto_Hoadon;
 
-        private CheckBox checkBox6;
         private Button btnNextpageTaoDon;
         private TextBox txtBox_length;
         private TextBox txtBox_width;
@@ -652,7 +647,7 @@
         private DateTimePicker datePicker_estimate_pickup_date;
         private ComboBox cbBox_estimate_pickup_time;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker datePicker_estimate_delivery_date;
         private RadioButton radioBtn_khong_xem;
         private RadioButton radioBtn_cho_xem_khong_thu;
         private RadioButton radioBtn_cho_thu_hang;

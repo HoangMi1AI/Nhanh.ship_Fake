@@ -1,10 +1,13 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 class ConnectDB
 {
     private string connString;
+
 
     // Constructor to initialize connection string
     public ConnectDB()
@@ -17,12 +20,29 @@ class ConnectDB
         connString = $"Server={server};Port={port};Database={database};User Id={user};Password={password};SslMode=Required;";
     }
 
+    public int GetMaxOrderId()
+    {
+        string query = "SELECT MAX(orders_id) FROM Orders";
+
+        using (var connection = new MySqlConnection(connString))
+        {
+            connection.Open();
+            using (var command = new MySqlCommand(query, connection))
+            {
+                var result = command.ExecuteScalar();
+                // If result is null, return 0, meaning no order exists yet.
+                return result != DBNull.Value ? Convert.ToInt32(result) : 0;
+            }
+        }
+    }
+
+
     // Method to save data to the database
     public void SaveOrderDataToDatabase(OrdersData ordersData)
     {
-        string query = "INSERT INTO Orders (user_id, order_code, to_name, to_phone, to_address, to_ward_name, to_district_name, " +
+        string query = "INSERT INTO Orders (user_id, order_code, to_name, to_phone, to_address, to_ward_name, to_ward_code, to_district_name, " +
                        "to_district_id, from_district_id, required_note, shipping_company, COD, payer) " +
-                       "VALUES (@user_id, @order_code, @to_name, @to_phone, @to_address, @to_ward_name, @to_district_name, " +
+                       "VALUES (@user_id, @order_code, @to_name, @to_phone, @to_address, @to_ward_name,@to_ward_code, @to_district_name, " +
                        "@to_district_id, @from_district_id, @required_note, @shipping_company, @COD, @payer)";
 
         using (var connection = new MySqlConnection(connString))
@@ -32,10 +52,12 @@ class ConnectDB
             {
                 command.Parameters.AddWithValue("@user_id", ordersData.UserId);
                 command.Parameters.AddWithValue("@order_code", ordersData.OrderCode);
+                command.Parameters.AddWithValue("@created_at", ordersData.Created_At);
                 command.Parameters.AddWithValue("@to_name", ordersData.ToName);
                 command.Parameters.AddWithValue("@to_phone", ordersData.ToPhone);
                 command.Parameters.AddWithValue("@to_address", ordersData.ToAddress);
                 command.Parameters.AddWithValue("@to_ward_name", ordersData.ToWardName);
+                command.Parameters.AddWithValue("@to_ward_code", ordersData.ToWardCode);
                 command.Parameters.AddWithValue("@to_district_name", ordersData.ToDistrictName);
                 command.Parameters.AddWithValue("@to_district_id", ordersData.ToDistrictId);
                 command.Parameters.AddWithValue("@from_district_id", ordersData.FromDistrictId);
@@ -43,6 +65,8 @@ class ConnectDB
                 command.Parameters.AddWithValue("@shipping_company", ordersData.ShippingCompany);
                 command.Parameters.AddWithValue("@COD", ordersData.COD);
                 command.Parameters.AddWithValue("@payer", ordersData.Payer);
+
+
 
                 command.ExecuteNonQuery();
             }
@@ -79,17 +103,39 @@ class ConnectDB
             }
         }
     }
+    public void SaveOrderStatusDataToDatabase(OrderStatusData orderStatusData)
+    {
+        string query = "INSERT INTO OrderStatus (orders_id, from_status, to_status, change_time) VALUES (@orders_id, @from_status, @to_status, @change_time)";
+        using (var connection = new MySqlConnection(connString))
+        {
+            connection.Open();
+            using (var command = new MySqlCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@orders_id", orderStatusData.OrdersId);
+                command.Parameters.AddWithValue("@from_status", orderStatusData.FromStatus);
+                command.Parameters.AddWithValue("@to_status", orderStatusData.ToStatus);
+                command.Parameters.AddWithValue("@change_time", orderStatusData.ChangeTime);
+
+
+                command.ExecuteNonQuery();
+            }
+        }
+    }
 }
 
 // FormData class to represent the data structure
+
 public class OrdersData
 {
+    public int OrderId { get; set; }
     public int UserId { get; set; }
     public int OrderCode { get; set; }
+    public DateTime? Created_At { get; set; }
     public string ToName { get; set; }
     public string ToPhone { get; set; }
     public string ToAddress { get; set; }
     public string ToWardName { get; set; }
+    public string ToWardCode { get; set; }
     public string ToDistrictName { get; set; }
     public int ToDistrictId { get; set; }
     public int FromDistrictId { get; set; }
@@ -97,6 +143,7 @@ public class OrdersData
     public string ShippingCompany { get; set; }
     public int COD { get; set; }
     public bool Payer { get; set; }
+
 }
 public class OrdersDetailData
 {
@@ -115,4 +162,10 @@ public class OrdersDetailData
     public string Note { get; set; }
 }
 
-
+public class OrderStatusData
+{
+    public int OrdersId { get; set; }
+    public string FromStatus { get; set; }  // 'init', 'pending', 'processed', 'completed', 'failed'
+    public string ToStatus { get; set; }    // 'pending', 'processed', 'completed', 'failed'
+    public DateTime ChangeTime { get; set; }  // Timestamp cho thời gian thay đổi trạng thái
+}

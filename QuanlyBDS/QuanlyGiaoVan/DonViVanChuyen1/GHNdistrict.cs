@@ -15,8 +15,8 @@ namespace QuanlyGiaoVan
             BaseAddress = new Uri("https://online-gateway.ghn.vn/shiip/public-api/")
         };
 
-        private const string Token = "333326a6-c674-11ef-8400-fe4ff714b6c1";
-        private const int ShopId = 5559346;
+        private const string Token = "b58324d1-c834-11ef-82e4-ca3fa9530337";
+        private const int ShopId = 5564116;
 
         // Hàm lấy danh sách tỉnh/thành phố
         public async Task<List<(int Id, string Name)>> GetProvinces()
