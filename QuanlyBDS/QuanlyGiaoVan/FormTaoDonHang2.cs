@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static QuanlyGiaoVan.FormTraCuoc;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanlyGiaoVan
@@ -17,11 +19,11 @@ namespace QuanlyGiaoVan
         private OrdersData _ordersData;
         private OrdersDetailData _ordersDetailData;
 
-
-        public FormTaoDonHang2(OrdersData ordersData)
+        public FormTaoDonHang2(OrdersData ordersData, OrdersDetailData ordersDetailData)
         {
             InitializeComponent();
             _ordersData = ordersData;
+            _ordersDetailData = ordersDetailData;
 
         }
 
@@ -45,7 +47,7 @@ namespace QuanlyGiaoVan
         }
 
 
-        private void btnConfirm_Click(object sender, EventArgs e)
+        private async void btnConfirm_Click(object sender, EventArgs e)
         {
             List<System.Windows.Forms.ComboBox> comboBoxes = new List<System.Windows.Forms.ComboBox> { cbDonViVanChuyen };
 
@@ -67,21 +69,7 @@ namespace QuanlyGiaoVan
                 return;
             }
 
-            //_ordersDetailData = new OrdersDetailData
-            //{
-            //    NameOrder = txtBox_name_order.Text,
-            //    TypeOrder = cbTypeOrder.SelectedItem.ToString(),
-            //    Weight = Convert.ToInt32(txtBox_weight.Text),
-            //    Length = Convert.ToInt32(txtBox_length.Text),
-            //    Width = Convert.ToInt32(txtBox_width.Text),
-            //    Height = Convert.ToInt32(txtBox_height.Text),
-            //    Value = Convert.ToDecimal(txtBox_value.Text),
-            //    EstimatePickUpDate = datePicker_pick_up.Value,
-            //    EstimatePickUpTime = cbPickUpTime.SelectedItem.ToString(),
-            //    EstimateDeliveryDate = datePicker_delivery.Value,
-            //    Characteristic = txtBox_characteristic.Text,
-            //    Note = txtBox_note.Text
-            //};
+
 
 
 
@@ -92,16 +80,47 @@ namespace QuanlyGiaoVan
             _ordersData.ShippingCompany = cbDonViVanChuyen.SelectedItem.ToString();
             _ordersData.Payer = payer;
 
+            //_ordersDetailData.Note = txtBox_Note.Text;
+
+
+
+            DateTime changeTime = DateTime.UtcNow.AddHours(7);
+
+            var _orderStatus = new OrderStatusData
+            {
+                OrdersId = _ordersData.OrderId,
+                FromStatus = "init",
+                ToStatus = "pending",
+                ChangeTime = changeTime
+            };
+
+
             // Save data to database
             ConnectDB connectDB = new ConnectDB();
             connectDB.SaveOrderDataToDatabase(_ordersData);
-            //connectDB.SaveOrderDetailDataToDatabase(_ordersDetailData);
-            
-            MessageBox.Show("Tạo đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            
+            connectDB.SaveOrderDetailDataToDatabase(_ordersDetailData);
+            connectDB.SaveOrderStatusDataToDatabase(_orderStatus);
 
+            MessageBox.Show("Đã thêm đơn hàng vào Database!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+            GHNService ghnService = new GHNService();
+
+            await ghnService.CreateShippingOrder(
+                _ordersData.ToName,
+                _ordersData.ToPhone,
+                _ordersData.ToAddress,
+                _ordersData.ToWardCode,
+                _ordersData.ToDistrictId,
+                _ordersDetailData.Weight,
+                _ordersDetailData.Length,
+                _ordersDetailData.Width,
+                _ordersDetailData.Height,
+                _ordersData.RequiredNote
+                );
         }
-        
+
 
 
     }
