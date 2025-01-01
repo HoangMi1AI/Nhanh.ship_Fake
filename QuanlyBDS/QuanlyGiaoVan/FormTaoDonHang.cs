@@ -9,50 +9,53 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace QuanlyGiaoVan
 {
     public partial class FormTaoDonHang : Form
     {
         private Class_Diachi classDiachi;
+        private OrdersData _ordersData;
         public FormTaoDonHang()
         {
             InitializeComponent();
             classDiachi = new Class_Diachi();
-            classDiachi.LoadProvinces(cboProvinces); // Tải danh sách tỉnh người gửi
+            classDiachi.LoadProvinces(cbBox_to_province); // Tải danh sách tỉnh người gửi
         }
 
 
         private void cboProvinces_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboProvinces.SelectedValue != null)
+            if (cbBox_to_province.SelectedValue != null)
             {
-                string provinceCode = cboProvinces.SelectedValue.ToString();
-                classDiachi.LoadDistricts(cboDistricts, provinceCode); // Tải huyện theo tỉnh đã chọn
+                string provinceCode = cbBox_to_province.SelectedValue.ToString();
+                classDiachi.LoadDistricts(cbBox_to_district, provinceCode); // Tải huyện theo tỉnh đã chọn
 
             }
         }
         private void cboDistricts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboDistricts.SelectedValue != null)
+            if (cbBox_to_district.SelectedValue != null)
             {
-                string district_code = cboDistricts.SelectedValue.ToString();
-                classDiachi.LoadXa(cboXa, district_code); // Tải xa theo tỉnh đã chọn
+                string district_code = cbBox_to_district.SelectedValue.ToString();
+                classDiachi.LoadXa(cbBox_to_ward, district_code); // Tải xa theo tỉnh đã chọn
             }
         }
-        private void thoigian_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbThoigianhenlay.Text != "")
-            {
-                LBthoigianhenlay.Visible = true;
-            }
-        }
+        //private void thoigian_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    if (cbThoigianhenlay.Text != "")
+        //    {
+        //        LBthoigianhenlay.Visible = true;
+        //    }
+        //}
 
         private void btnNextpageTaoDon_Click(object sender, EventArgs e)
         {
             // Lấy danh sách các TextBox và ComboBox cần kiểm tra
-            List<System.Windows.Forms.TextBox> textBoxes = new List<System.Windows.Forms.TextBox> {txtDiaChiNguoiNhan, txtHoTenNguoiNhan,txtSDTnguoiNhan,txtTenHang1,txtTrongLuong1,txtGiaTri };
-            List<System.Windows.Forms.ComboBox> comboBoxes = new List<System.Windows.Forms.ComboBox> {cboProvinces,cboDistricts,cboXa,cbThoigianhenlay ,cbTgHenGiao};
+            List<System.Windows.Forms.TextBox> textBoxes = new List<System.Windows.Forms.TextBox> {
+                txtBox_to_address, txtBox_to_name, txtBox_to_number, txtBox_name_order, txtBox_weight, txtBox_value };
+            List<System.Windows.Forms.ComboBox> comboBoxes = new List<System.Windows.Forms.ComboBox> { cbBox_to_province, cbBox_to_district, cbBox_to_ward };
 
             // Kiểm tra các TextBox
             foreach (var textBox in textBoxes)
@@ -75,27 +78,76 @@ namespace QuanlyGiaoVan
             }
 
             // Kiểm tra nhóm RadioButton trong GroupBox
-            bool isRadioButtonChecked = gbTThangHoa.Controls.OfType<RadioButton>().Any(r => r.Checked);
+            bool isRadioButtonChecked = gbTThangHoa.Controls.OfType<System.Windows.Forms.RadioButton>().Any(r => r.Checked);
             if (!isRadioButtonChecked)
             {
                 MessageBox.Show("Vui lòng chọn một tùy chọn trong RadioButton!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return; // Ngừng thực hiện nếu không có RadioButton nào được chọn
             }
-
-            // Kiểm tra ListBox
-            if (LBthoigianhenlay.SelectedItems.Count == 0) // Hoặc listBox1.SelectedIndex == -1
+            _ordersData = new OrdersData
             {
-                MessageBox.Show("Vui lòng chọn ít nhất một mục trong ListBox!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // Ngừng thực hiện nếu không có mục nào được chọn
+                UserId = 1,  // Example, this could come from the logged-in user
+                OrderCode = 12345,
+                ToName = txtBox_to_name.Text,
+                ToPhone = txtBox_to_number.Text,
+                ToAddress = txtBox_to_address.Text,
+                ToWardName = cbBox_to_ward.SelectedItem.ToString(),
+                ToDistrictName = cbBox_to_district.SelectedItem.ToString(),
+                ToDistrictId = 1,  // Example district ID
+                FromDistrictId = 202,  // Example district ID
+            };
+
+            if (radioBtn_khong_xem.Checked)
+            {
+                _ordersData.RequiredNote = "KHONGCHOXEMHANG";
             }
-            // Tạo một instance của form kế tiếp
-            FormTaoDonHang2 formtaodonhang2 = new FormTaoDonHang2();
+            else if (radioBtn_cho_xem_khong_thu.Checked)
+            {
+                _ordersData.RequiredNote = "CHOXEMHANGKHONGTHU";
+            }
+            else if (radioBtn_cho_thu_hang.Checked)
+            {
+                _ordersData.RequiredNote = "CHOTHUHANG";
+            }
+
+
+            FormTaoDonHang2 formtaodonhang2 = new FormTaoDonHang2(_ordersData);
 
             // Hiển thị form tiếp theo
             formtaodonhang2.Show();
 
             // Đóng form hiện tại nếu cần
             this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormTaoDonHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThemHangHoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioBtn_Tailieu_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
