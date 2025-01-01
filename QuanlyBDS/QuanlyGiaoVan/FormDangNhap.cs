@@ -115,9 +115,11 @@ namespace QuanlyGiaoVan
             if (userDB.CheckLogin(username, password))
             {
                 CheckLoginStatus = true;
-                MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng Nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FormGiaoDienTrong formGiaoDienTrong = new FormGiaoDienTrong();
+
                 formGiaoDienTrong.Show();
+
                 this.Close();
             }
             else

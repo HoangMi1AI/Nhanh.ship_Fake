@@ -96,9 +96,12 @@ namespace QuanlyGiaoVan
             ConnectDB connectDB = new ConnectDB();
             connectDB.SaveOrderDataToDatabase(_ordersData);
             //connectDB.SaveOrderDetailDataToDatabase(_ordersDetailData);
-        }
+            
+            MessageBox.Show("Tạo đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
 
-  
+        }
+        
 
 
     }

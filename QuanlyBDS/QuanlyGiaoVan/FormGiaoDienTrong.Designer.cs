@@ -35,7 +35,7 @@
             noBorderButton2 = new NoBorderButton();
             noBorderButton1 = new NoBorderButton();
             btnHoiDap = new NoBorderButton();
-            btnDangNhap = new NoBorderButton();
+            btnTaoDon = new NoBorderButton();
             btnTraCuoc1 = new NoBorderButton();
             roundPanel1 = new RoundPanel();
             tabControl1 = new TabControl();
@@ -69,7 +69,7 @@
             roundPanel.Controls.Add(noBorderButton2);
             roundPanel.Controls.Add(noBorderButton1);
             roundPanel.Controls.Add(btnHoiDap);
-            roundPanel.Controls.Add(btnDangNhap);
+            roundPanel.Controls.Add(btnTaoDon);
             roundPanel.Controls.Add(btnTraCuoc1);
             roundPanel.CornerRadiusBottomLeft = 20;
             roundPanel.CornerRadiusBottomRight = 0;
@@ -94,6 +94,7 @@
             btnDangXuat.TabIndex = 5;
             btnDangXuat.Text = "Đăng xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // noBorderButton2
             // 
@@ -134,18 +135,19 @@
             btnHoiDap.Text = "Hỏi đáp";
             btnHoiDap.UseVisualStyleBackColor = false;
             // 
-            // btnDangNhap
+            // btnTaoDon
             // 
-            btnDangNhap.BackColor = Color.FromArgb(43, 57, 82);
-            btnDangNhap.FlatStyle = FlatStyle.Popup;
-            btnDangNhap.ForeColor = SystemColors.ControlLightLight;
-            btnDangNhap.Location = new Point(0, 109);
-            btnDangNhap.Margin = new Padding(4);
-            btnDangNhap.Name = "btnDangNhap";
-            btnDangNhap.Size = new Size(219, 60);
-            btnDangNhap.TabIndex = 1;
-            btnDangNhap.Text = "Tạo đơn";
-            btnDangNhap.UseVisualStyleBackColor = false;
+            btnTaoDon.BackColor = Color.FromArgb(43, 57, 82);
+            btnTaoDon.FlatStyle = FlatStyle.Popup;
+            btnTaoDon.ForeColor = SystemColors.ControlLightLight;
+            btnTaoDon.Location = new Point(0, 109);
+            btnTaoDon.Margin = new Padding(4);
+            btnTaoDon.Name = "btnTaoDon";
+            btnTaoDon.Size = new Size(219, 60);
+            btnTaoDon.TabIndex = 1;
+            btnTaoDon.Text = "Tạo đơn";
+            btnTaoDon.UseVisualStyleBackColor = false;
+            btnTaoDon.Click += btnTaoDon_Click;
             // 
             // btnTraCuoc1
             // 
@@ -378,7 +380,7 @@
 
         private Label label3;
         private Label label2;
-        private NoBorderButton btnDangNhap;
+        private NoBorderButton btnTaoDon;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
