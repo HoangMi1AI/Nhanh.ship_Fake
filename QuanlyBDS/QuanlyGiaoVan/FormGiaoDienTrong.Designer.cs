@@ -33,7 +33,7 @@
             roundPanel = new RoundPanel();
             btnDangXuat = new NoBorderButton();
             noBorderButton2 = new NoBorderButton();
-            noBorderButton1 = new NoBorderButton();
+            btnBaoCao = new NoBorderButton();
             btnHoiDap = new NoBorderButton();
             btnTaoDon = new NoBorderButton();
             btnTraCuoc1 = new NoBorderButton();
@@ -67,7 +67,7 @@
             roundPanel.BorderThickness = 2F;
             roundPanel.Controls.Add(btnDangXuat);
             roundPanel.Controls.Add(noBorderButton2);
-            roundPanel.Controls.Add(noBorderButton1);
+            roundPanel.Controls.Add(btnBaoCao);
             roundPanel.Controls.Add(btnHoiDap);
             roundPanel.Controls.Add(btnTaoDon);
             roundPanel.Controls.Add(btnTraCuoc1);
@@ -109,18 +109,19 @@
             noBorderButton2.Text = "Tài khoản";
             noBorderButton2.UseVisualStyleBackColor = false;
             // 
-            // noBorderButton1
+            // btnBaoCao
             // 
-            noBorderButton1.BackColor = Color.FromArgb(43, 57, 82);
-            noBorderButton1.FlatStyle = FlatStyle.Popup;
-            noBorderButton1.ForeColor = SystemColors.ControlLightLight;
-            noBorderButton1.Location = new Point(0, 259);
-            noBorderButton1.Margin = new Padding(4);
-            noBorderButton1.Name = "noBorderButton1";
-            noBorderButton1.Size = new Size(219, 60);
-            noBorderButton1.TabIndex = 3;
-            noBorderButton1.Text = "Báo cáo";
-            noBorderButton1.UseVisualStyleBackColor = false;
+            btnBaoCao.BackColor = Color.FromArgb(43, 57, 82);
+            btnBaoCao.FlatStyle = FlatStyle.Popup;
+            btnBaoCao.ForeColor = SystemColors.ControlLightLight;
+            btnBaoCao.Location = new Point(0, 259);
+            btnBaoCao.Margin = new Padding(4);
+            btnBaoCao.Name = "btnBaoCao";
+            btnBaoCao.Size = new Size(219, 60);
+            btnBaoCao.TabIndex = 3;
+            btnBaoCao.Text = "Báo cáo";
+            btnBaoCao.UseVisualStyleBackColor = false;
+            btnBaoCao.Click += btnBaoCao_Click;
             // 
             // btnHoiDap
             // 
@@ -391,6 +392,6 @@
         private TabPage tabPage3;
         private NoBorderButton btnDangXuat;
         private NoBorderButton noBorderButton2;
-        private NoBorderButton noBorderButton1;
+        private NoBorderButton btnBaoCao;
     }
 }
