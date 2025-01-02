@@ -136,7 +136,7 @@
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
             // Tạo một instance của formbaocao
-            FormBaocao formBaocao = new FormBaocao();   
+            FormBaocao formBaocao = new FormBaocao();
 
             // Đăng ký sự kiện FormClosed cho 
             formBaocao.FormClosed += (s, args) =>
@@ -148,6 +148,26 @@
 
             // Hiển thị 
             formBaocao.Show();
+
+            // Ẩn 
+            this.Hide();
+        }
+
+        private void btnQuanLyDonHang_Click(object sender, EventArgs e)
+        {
+            // Tạo một instance của formbaocao
+            FormQuanLyDonHang formQuanLyDonHang = new FormQuanLyDonHang();  
+
+            // Đăng ký sự kiện FormClosed cho 
+            formQuanLyDonHang.FormClosed += (s, args) =>
+            {
+
+                this.Show();
+
+            };
+
+            // Hiển thị 
+            formQuanLyDonHang.Show();
 
             // Ẩn 
             this.Hide();

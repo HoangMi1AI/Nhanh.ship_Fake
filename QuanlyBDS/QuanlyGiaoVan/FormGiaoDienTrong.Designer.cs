@@ -34,7 +34,7 @@
             btnDangXuat = new NoBorderButton();
             noBorderButton2 = new NoBorderButton();
             btnBaoCao = new NoBorderButton();
-            btnHoiDap = new NoBorderButton();
+            btnQuanLyDonHang = new NoBorderButton();
             btnTaoDon = new NoBorderButton();
             btnTraCuoc1 = new NoBorderButton();
             roundPanel1 = new RoundPanel();
@@ -68,7 +68,7 @@
             roundPanel.Controls.Add(btnDangXuat);
             roundPanel.Controls.Add(noBorderButton2);
             roundPanel.Controls.Add(btnBaoCao);
-            roundPanel.Controls.Add(btnHoiDap);
+            roundPanel.Controls.Add(btnQuanLyDonHang);
             roundPanel.Controls.Add(btnTaoDon);
             roundPanel.Controls.Add(btnTraCuoc1);
             roundPanel.CornerRadiusBottomLeft = 20;
@@ -123,18 +123,19 @@
             btnBaoCao.UseVisualStyleBackColor = false;
             btnBaoCao.Click += btnBaoCao_Click;
             // 
-            // btnHoiDap
+            // btnQuanLyDonHang
             // 
-            btnHoiDap.BackColor = Color.FromArgb(43, 57, 82);
-            btnHoiDap.FlatStyle = FlatStyle.Popup;
-            btnHoiDap.ForeColor = SystemColors.ControlLightLight;
-            btnHoiDap.Location = new Point(0, 409);
-            btnHoiDap.Margin = new Padding(4);
-            btnHoiDap.Name = "btnHoiDap";
-            btnHoiDap.Size = new Size(219, 60);
-            btnHoiDap.TabIndex = 2;
-            btnHoiDap.Text = "Hỏi đáp";
-            btnHoiDap.UseVisualStyleBackColor = false;
+            btnQuanLyDonHang.BackColor = Color.FromArgb(43, 57, 82);
+            btnQuanLyDonHang.FlatStyle = FlatStyle.Popup;
+            btnQuanLyDonHang.ForeColor = SystemColors.ControlLightLight;
+            btnQuanLyDonHang.Location = new Point(0, 409);
+            btnQuanLyDonHang.Margin = new Padding(4);
+            btnQuanLyDonHang.Name = "btnQuanLyDonHang";
+            btnQuanLyDonHang.Size = new Size(219, 60);
+            btnQuanLyDonHang.TabIndex = 2;
+            btnQuanLyDonHang.Text = "Quản lý đơn hàng";
+            btnQuanLyDonHang.UseVisualStyleBackColor = false;
+            btnQuanLyDonHang.Click += btnQuanLyDonHang_Click;
             // 
             // btnTaoDon
             // 
@@ -385,7 +386,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private NoBorderButton btnHoiDap;
+        private NoBorderButton btnQuanLyDonHang;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
