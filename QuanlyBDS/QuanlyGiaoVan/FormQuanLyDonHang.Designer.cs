@@ -28,151 +28,590 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            tabControl1 = new TabControl();
-            tabPage4 = new TabPage();
-            tabPage5 = new TabPage();
-            tabPage6 = new TabPage();
-            tabPage7 = new TabPage();
-            tabPage3 = new TabPage();
-            dataGridView1 = new DataGridView();
-            groupBox1.SuspendLayout();
-            tabControl1.SuspendLayout();
-            tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBoxQuanLyDonHang = new GroupBox();
+            btnTimKiem = new Button();
+            txtNhapMaDonHang = new TextBox();
+            tabControlQuanLyDonHang = new TabControl();
+            tabPageDonHangTimKiem = new TabPage();
+            btnHuyDonHang = new Button();
+            btnKhieuNai = new Button();
+            dgvDonHangTimKiem = new DataGridView();
+            tabPageDaTaoDon = new TabPage();
+            btnTabDXL = new Button();
+            txtTabDXL = new TextBox();
+            dgvTabDXL = new DataGridView();
+            tabPageDangXuLy = new TabPage();
+            tabPageDangVanChuyen = new TabPage();
+            btnTabDVC = new Button();
+            txtTabDVC = new TextBox();
+            dgvTabDVC = new DataGridView();
+            tabPageDangGiaoHang = new TabPage();
+            btnTabDGH = new Button();
+            txtTabDGH = new TextBox();
+            dgvTabDGH = new DataGridView();
+            tabPageDaGiaoHang = new TabPage();
+            btnTabDaGH = new Button();
+            txtTabDaGH = new TextBox();
+            dgvTabDaGH = new DataGridView();
+            tabPageTraHang = new TabPage();
+            btnTabTH = new Button();
+            txtTabTH = new TextBox();
+            dgvTabTH = new DataGridView();
+            tabPageKhieuNai = new TabPage();
+            btnTabKN = new Button();
+            txtTabKN = new TextBox();
+            dgvTabKN = new DataGridView();
+            tabPageHoanTat = new TabPage();
+            btnTabHT = new Button();
+            txtTabHT = new TextBox();
+            dgvTabHT = new DataGridView();
+            btnDTD = new Button();
+            txtDTD = new TextBox();
+            dgvDTD = new DataGridView();
+            groupBoxQuanLyDonHang.SuspendLayout();
+            tabControlQuanLyDonHang.SuspendLayout();
+            tabPageDonHangTimKiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvDonHangTimKiem).BeginInit();
+            tabPageDaTaoDon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDXL).BeginInit();
+            tabPageDangXuLy.SuspendLayout();
+            tabPageDangVanChuyen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDVC).BeginInit();
+            tabPageDangGiaoHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDGH).BeginInit();
+            tabPageDaGiaoHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDaGH).BeginInit();
+            tabPageTraHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabTH).BeginInit();
+            tabPageKhieuNai.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabKN).BeginInit();
+            tabPageHoanTat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabHT).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDTD).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxQuanLyDonHang
             // 
-            groupBox1.Controls.Add(tabControl1);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Font = new Font("Segoe UI", 12F);
-            groupBox1.Location = new Point(35, 32);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1074, 609);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Quản lý Đơn hàng";
+            groupBoxQuanLyDonHang.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBoxQuanLyDonHang.Controls.Add(btnTimKiem);
+            groupBoxQuanLyDonHang.Controls.Add(txtNhapMaDonHang);
+            groupBoxQuanLyDonHang.Controls.Add(tabControlQuanLyDonHang);
+            groupBoxQuanLyDonHang.Font = new Font("Segoe UI", 12F);
+            groupBoxQuanLyDonHang.Location = new Point(38, 12);
+            groupBoxQuanLyDonHang.Name = "groupBoxQuanLyDonHang";
+            groupBoxQuanLyDonHang.Size = new Size(1074, 644);
+            groupBoxQuanLyDonHang.TabIndex = 0;
+            groupBoxQuanLyDonHang.TabStop = false;
+            groupBoxQuanLyDonHang.Text = "Quản lý Đơn hàng";
             // 
-            // textBox1
+            // btnTimKiem
             // 
-            textBox1.Location = new Point(639, 45);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 44);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Tìm kiếm";
+            btnTimKiem.BackColor = Color.FromArgb(128, 128, 255);
+            btnTimKiem.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTimKiem.ForeColor = Color.White;
+            btnTimKiem.Location = new Point(499, 50);
+            btnTimKiem.Name = "btnTimKiem";
+            btnTimKiem.Size = new Size(136, 43);
+            btnTimKiem.TabIndex = 5;
+            btnTimKiem.Text = "Tìm kiếm";
+            btnTimKiem.UseVisualStyleBackColor = false;
+            btnTimKiem.Click += btnTimKiem_Click;
             // 
-            // button1
+            // txtNhapMaDonHang
             // 
-            button1.Location = new Point(842, 45);
-            button1.Name = "button1";
-            button1.Size = new Size(179, 44);
-            button1.TabIndex = 1;
-            button1.Text = "Tạo đơn hàng";
-            button1.UseVisualStyleBackColor = true;
+            txtNhapMaDonHang.ForeColor = Color.Gray;
+            txtNhapMaDonHang.Location = new Point(35, 50);
+            txtNhapMaDonHang.Name = "txtNhapMaDonHang";
+            txtNhapMaDonHang.Size = new Size(385, 39);
+            txtNhapMaDonHang.TabIndex = 4;
+            txtNhapMaDonHang.Text = "Nhập mã đơn hàng";
             // 
-            // tabControl1
+            // tabControlQuanLyDonHang
             // 
-            tabControl1.Controls.Add(tabPage4);
-            tabControl1.Controls.Add(tabPage5);
-            tabControl1.Controls.Add(tabPage6);
-            tabControl1.Controls.Add(tabPage7);
-            tabControl1.Controls.Add(tabPage3);
-            tabControl1.Font = new Font("Segoe UI", 10F);
-            tabControl1.Location = new Point(28, 116);
-            tabControl1.Multiline = true;
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1030, 454);
-            tabControl1.TabIndex = 2;
+            tabControlQuanLyDonHang.Controls.Add(tabPageDonHangTimKiem);
+            tabControlQuanLyDonHang.Controls.Add(tabPageDaTaoDon);
+            tabControlQuanLyDonHang.Controls.Add(tabPageDangXuLy);
+            tabControlQuanLyDonHang.Controls.Add(tabPageDangVanChuyen);
+            tabControlQuanLyDonHang.Controls.Add(tabPageDangGiaoHang);
+            tabControlQuanLyDonHang.Controls.Add(tabPageDaGiaoHang);
+            tabControlQuanLyDonHang.Controls.Add(tabPageTraHang);
+            tabControlQuanLyDonHang.Controls.Add(tabPageKhieuNai);
+            tabControlQuanLyDonHang.Controls.Add(tabPageHoanTat);
+            tabControlQuanLyDonHang.Font = new Font("Segoe UI", 10F);
+            tabControlQuanLyDonHang.Location = new Point(28, 116);
+            tabControlQuanLyDonHang.Multiline = true;
+            tabControlQuanLyDonHang.Name = "tabControlQuanLyDonHang";
+            tabControlQuanLyDonHang.SelectedIndex = 0;
+            tabControlQuanLyDonHang.Size = new Size(1030, 522);
+            tabControlQuanLyDonHang.TabIndex = 2;
             // 
-            // tabPage4
+            // tabPageDonHangTimKiem
             // 
-            tabPage4.Controls.Add(dataGridView1);
-            tabPage4.Location = new Point(4, 37);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(1022, 413);
-            tabPage4.TabIndex = 2;
-            tabPage4.Text = "Chờ bàn giao";
-            tabPage4.UseVisualStyleBackColor = true;
+            tabPageDonHangTimKiem.Controls.Add(btnHuyDonHang);
+            tabPageDonHangTimKiem.Controls.Add(btnKhieuNai);
+            tabPageDonHangTimKiem.Controls.Add(dgvDonHangTimKiem);
+            tabPageDonHangTimKiem.Location = new Point(4, 70);
+            tabPageDonHangTimKiem.Name = "tabPageDonHangTimKiem";
+            tabPageDonHangTimKiem.Size = new Size(1022, 448);
+            tabPageDonHangTimKiem.TabIndex = 2;
+            tabPageDonHangTimKiem.Text = "Đơn hàng tìm kiếm";
+            tabPageDonHangTimKiem.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // btnHuyDonHang
             // 
-            tabPage5.AutoScroll = true;
-            tabPage5.Location = new Point(4, 37);
-            tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(1022, 339);
-            tabPage5.TabIndex = 3;
-            tabPage5.Text = "Đã bàn giao - đang giao";
-            tabPage5.UseVisualStyleBackColor = true;
+            btnHuyDonHang.BackColor = Color.FromArgb(128, 128, 255);
+            btnHuyDonHang.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnHuyDonHang.ForeColor = Color.White;
+            btnHuyDonHang.Location = new Point(244, 390);
+            btnHuyDonHang.Name = "btnHuyDonHang";
+            btnHuyDonHang.Size = new Size(187, 43);
+            btnHuyDonHang.TabIndex = 7;
+            btnHuyDonHang.Text = "Hủy đơn hàng";
+            btnHuyDonHang.UseVisualStyleBackColor = false;
             // 
-            // tabPage6
+            // btnKhieuNai
             // 
-            tabPage6.Location = new Point(4, 37);
-            tabPage6.Name = "tabPage6";
-            tabPage6.Size = new Size(1022, 339);
-            tabPage6.TabIndex = 4;
-            tabPage6.Text = "Đã bàn giao - đang hoàn hàng";
-            tabPage6.UseVisualStyleBackColor = true;
+            btnKhieuNai.BackColor = Color.FromArgb(128, 128, 255);
+            btnKhieuNai.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKhieuNai.ForeColor = Color.White;
+            btnKhieuNai.Location = new Point(28, 390);
+            btnKhieuNai.Name = "btnKhieuNai";
+            btnKhieuNai.Size = new Size(136, 43);
+            btnKhieuNai.TabIndex = 6;
+            btnKhieuNai.Text = "Khiếu nại";
+            btnKhieuNai.UseVisualStyleBackColor = false;
             // 
-            // tabPage7
+            // dgvDonHangTimKiem
             // 
-            tabPage7.Location = new Point(4, 37);
-            tabPage7.Name = "tabPage7";
-            tabPage7.Size = new Size(1022, 339);
-            tabPage7.TabIndex = 5;
-            tabPage7.Text = "Chờ xác nhận giao lại";
-            tabPage7.UseVisualStyleBackColor = true;
+            dgvDonHangTimKiem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDonHangTimKiem.Location = new Point(3, 3);
+            dgvDonHangTimKiem.Name = "dgvDonHangTimKiem";
+            dgvDonHangTimKiem.RowHeadersWidth = 62;
+            dgvDonHangTimKiem.Size = new Size(1016, 376);
+            dgvDonHangTimKiem.TabIndex = 0;
             // 
-            // tabPage3
+            // tabPageDaTaoDon
             // 
-            tabPage3.Location = new Point(4, 37);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1022, 339);
-            tabPage3.TabIndex = 6;
-            tabPage3.Text = "Hoàn tất";
-            tabPage3.UseVisualStyleBackColor = true;
+            tabPageDaTaoDon.AutoScroll = true;
+            tabPageDaTaoDon.Controls.Add(btnDTD);
+            tabPageDaTaoDon.Controls.Add(txtDTD);
+            tabPageDaTaoDon.Controls.Add(dgvDTD);
+            tabPageDaTaoDon.Location = new Point(4, 70);
+            tabPageDaTaoDon.Name = "tabPageDaTaoDon";
+            tabPageDaTaoDon.Size = new Size(1022, 448);
+            tabPageDaTaoDon.TabIndex = 4;
+            tabPageDaTaoDon.Text = "Đã tạo đơn";
+            tabPageDaTaoDon.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // btnTabDXL
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(37, 19);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(952, 225);
-            dataGridView1.TabIndex = 0;
+            btnTabDXL.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabDXL.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabDXL.ForeColor = Color.White;
+            btnTabDXL.Location = new Point(467, 13);
+            btnTabDXL.Name = "btnTabDXL";
+            btnTabDXL.Size = new Size(136, 43);
+            btnTabDXL.TabIndex = 3;
+            btnTabDXL.Text = "Tìm kiếm";
+            btnTabDXL.UseVisualStyleBackColor = false;
+            // 
+            // txtTabDXL
+            // 
+            txtTabDXL.ForeColor = Color.Gray;
+            txtTabDXL.Location = new Point(32, 17);
+            txtTabDXL.Name = "txtTabDXL";
+            txtTabDXL.Size = new Size(385, 34);
+            txtTabDXL.TabIndex = 2;
+            txtTabDXL.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabDXL
+            // 
+            dgvTabDXL.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabDXL.Location = new Point(3, 82);
+            dgvTabDXL.Name = "dgvTabDXL";
+            dgvTabDXL.RowHeadersWidth = 62;
+            dgvTabDXL.Size = new Size(1016, 363);
+            dgvTabDXL.TabIndex = 1;
+            // 
+            // tabPageDangXuLy
+            // 
+            tabPageDangXuLy.AutoScroll = true;
+            tabPageDangXuLy.Controls.Add(btnTabDXL);
+            tabPageDangXuLy.Controls.Add(txtTabDXL);
+            tabPageDangXuLy.Controls.Add(dgvTabDXL);
+            tabPageDangXuLy.Location = new Point(4, 70);
+            tabPageDangXuLy.Name = "tabPageDangXuLy";
+            tabPageDangXuLy.Size = new Size(1022, 448);
+            tabPageDangXuLy.TabIndex = 3;
+            tabPageDangXuLy.Text = "Đang xử lý";
+            tabPageDangXuLy.UseVisualStyleBackColor = true;
+            // 
+            // tabPageDangVanChuyen
+            // 
+            tabPageDangVanChuyen.Controls.Add(btnTabDVC);
+            tabPageDangVanChuyen.Controls.Add(txtTabDVC);
+            tabPageDangVanChuyen.Controls.Add(dgvTabDVC);
+            tabPageDangVanChuyen.Location = new Point(4, 70);
+            tabPageDangVanChuyen.Name = "tabPageDangVanChuyen";
+            tabPageDangVanChuyen.Size = new Size(1022, 448);
+            tabPageDangVanChuyen.TabIndex = 5;
+            tabPageDangVanChuyen.Text = "Đang vận chuyển";
+            tabPageDangVanChuyen.UseVisualStyleBackColor = true;
+            // 
+            // btnTabDVC
+            // 
+            btnTabDVC.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabDVC.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabDVC.ForeColor = Color.White;
+            btnTabDVC.Location = new Point(467, 13);
+            btnTabDVC.Name = "btnTabDVC";
+            btnTabDVC.Size = new Size(136, 43);
+            btnTabDVC.TabIndex = 6;
+            btnTabDVC.Text = "Tìm kiếm";
+            btnTabDVC.UseVisualStyleBackColor = false;
+            // 
+            // txtTabDVC
+            // 
+            txtTabDVC.ForeColor = Color.Gray;
+            txtTabDVC.Location = new Point(32, 17);
+            txtTabDVC.Name = "txtTabDVC";
+            txtTabDVC.Size = new Size(385, 34);
+            txtTabDVC.TabIndex = 5;
+            txtTabDVC.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabDVC
+            // 
+            dgvTabDVC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabDVC.Location = new Point(3, 82);
+            dgvTabDVC.Name = "dgvTabDVC";
+            dgvTabDVC.RowHeadersWidth = 62;
+            dgvTabDVC.Size = new Size(1016, 381);
+            dgvTabDVC.TabIndex = 4;
+            // 
+            // tabPageDangGiaoHang
+            // 
+            tabPageDangGiaoHang.Controls.Add(btnTabDGH);
+            tabPageDangGiaoHang.Controls.Add(txtTabDGH);
+            tabPageDangGiaoHang.Controls.Add(dgvTabDGH);
+            tabPageDangGiaoHang.Location = new Point(4, 70);
+            tabPageDangGiaoHang.Name = "tabPageDangGiaoHang";
+            tabPageDangGiaoHang.Size = new Size(1022, 448);
+            tabPageDangGiaoHang.TabIndex = 6;
+            tabPageDangGiaoHang.Text = "Đang giao hàng";
+            tabPageDangGiaoHang.UseVisualStyleBackColor = true;
+            // 
+            // btnTabDGH
+            // 
+            btnTabDGH.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabDGH.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabDGH.ForeColor = Color.White;
+            btnTabDGH.Location = new Point(467, 13);
+            btnTabDGH.Name = "btnTabDGH";
+            btnTabDGH.Size = new Size(136, 43);
+            btnTabDGH.TabIndex = 6;
+            btnTabDGH.Text = "Tìm kiếm";
+            btnTabDGH.UseVisualStyleBackColor = false;
+            // 
+            // txtTabDGH
+            // 
+            txtTabDGH.ForeColor = Color.Gray;
+            txtTabDGH.Location = new Point(32, 17);
+            txtTabDGH.Name = "txtTabDGH";
+            txtTabDGH.Size = new Size(385, 34);
+            txtTabDGH.TabIndex = 5;
+            txtTabDGH.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabDGH
+            // 
+            dgvTabDGH.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabDGH.Location = new Point(3, 82);
+            dgvTabDGH.Name = "dgvTabDGH";
+            dgvTabDGH.RowHeadersWidth = 62;
+            dgvTabDGH.Size = new Size(1016, 381);
+            dgvTabDGH.TabIndex = 4;
+            // 
+            // tabPageDaGiaoHang
+            // 
+            tabPageDaGiaoHang.Controls.Add(btnTabDaGH);
+            tabPageDaGiaoHang.Controls.Add(txtTabDaGH);
+            tabPageDaGiaoHang.Controls.Add(dgvTabDaGH);
+            tabPageDaGiaoHang.Location = new Point(4, 70);
+            tabPageDaGiaoHang.Name = "tabPageDaGiaoHang";
+            tabPageDaGiaoHang.Size = new Size(1022, 448);
+            tabPageDaGiaoHang.TabIndex = 7;
+            tabPageDaGiaoHang.Text = "Đã giao hàng";
+            tabPageDaGiaoHang.UseVisualStyleBackColor = true;
+            // 
+            // btnTabDaGH
+            // 
+            btnTabDaGH.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabDaGH.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabDaGH.ForeColor = Color.White;
+            btnTabDaGH.Location = new Point(467, 13);
+            btnTabDaGH.Name = "btnTabDaGH";
+            btnTabDaGH.Size = new Size(136, 43);
+            btnTabDaGH.TabIndex = 6;
+            btnTabDaGH.Text = "Tìm kiếm";
+            btnTabDaGH.UseVisualStyleBackColor = false;
+            // 
+            // txtTabDaGH
+            // 
+            txtTabDaGH.ForeColor = Color.Gray;
+            txtTabDaGH.Location = new Point(32, 17);
+            txtTabDaGH.Name = "txtTabDaGH";
+            txtTabDaGH.Size = new Size(385, 34);
+            txtTabDaGH.TabIndex = 5;
+            txtTabDaGH.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabDaGH
+            // 
+            dgvTabDaGH.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabDaGH.Location = new Point(3, 82);
+            dgvTabDaGH.Name = "dgvTabDaGH";
+            dgvTabDaGH.RowHeadersWidth = 62;
+            dgvTabDaGH.Size = new Size(1016, 381);
+            dgvTabDaGH.TabIndex = 4;
+            // 
+            // tabPageTraHang
+            // 
+            tabPageTraHang.Controls.Add(btnTabTH);
+            tabPageTraHang.Controls.Add(txtTabTH);
+            tabPageTraHang.Controls.Add(dgvTabTH);
+            tabPageTraHang.Location = new Point(4, 70);
+            tabPageTraHang.Name = "tabPageTraHang";
+            tabPageTraHang.Size = new Size(1022, 448);
+            tabPageTraHang.TabIndex = 8;
+            tabPageTraHang.Text = "Trả hàng";
+            tabPageTraHang.UseVisualStyleBackColor = true;
+            // 
+            // btnTabTH
+            // 
+            btnTabTH.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabTH.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabTH.ForeColor = Color.White;
+            btnTabTH.Location = new Point(467, 13);
+            btnTabTH.Name = "btnTabTH";
+            btnTabTH.Size = new Size(136, 43);
+            btnTabTH.TabIndex = 6;
+            btnTabTH.Text = "Tìm kiếm";
+            btnTabTH.UseVisualStyleBackColor = false;
+            // 
+            // txtTabTH
+            // 
+            txtTabTH.ForeColor = Color.Gray;
+            txtTabTH.Location = new Point(32, 17);
+            txtTabTH.Name = "txtTabTH";
+            txtTabTH.Size = new Size(385, 34);
+            txtTabTH.TabIndex = 5;
+            txtTabTH.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabTH
+            // 
+            dgvTabTH.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabTH.Location = new Point(3, 82);
+            dgvTabTH.Name = "dgvTabTH";
+            dgvTabTH.RowHeadersWidth = 62;
+            dgvTabTH.Size = new Size(1016, 381);
+            dgvTabTH.TabIndex = 4;
+            // 
+            // tabPageKhieuNai
+            // 
+            tabPageKhieuNai.Controls.Add(btnTabKN);
+            tabPageKhieuNai.Controls.Add(txtTabKN);
+            tabPageKhieuNai.Controls.Add(dgvTabKN);
+            tabPageKhieuNai.Location = new Point(4, 70);
+            tabPageKhieuNai.Name = "tabPageKhieuNai";
+            tabPageKhieuNai.Size = new Size(1022, 448);
+            tabPageKhieuNai.TabIndex = 9;
+            tabPageKhieuNai.Text = "Khiếu nại";
+            tabPageKhieuNai.UseVisualStyleBackColor = true;
+            // 
+            // btnTabKN
+            // 
+            btnTabKN.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabKN.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabKN.ForeColor = Color.White;
+            btnTabKN.Location = new Point(467, 13);
+            btnTabKN.Name = "btnTabKN";
+            btnTabKN.Size = new Size(136, 43);
+            btnTabKN.TabIndex = 6;
+            btnTabKN.Text = "Tìm kiếm";
+            btnTabKN.UseVisualStyleBackColor = false;
+            // 
+            // txtTabKN
+            // 
+            txtTabKN.ForeColor = Color.Gray;
+            txtTabKN.Location = new Point(32, 17);
+            txtTabKN.Name = "txtTabKN";
+            txtTabKN.Size = new Size(385, 34);
+            txtTabKN.TabIndex = 5;
+            txtTabKN.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabKN
+            // 
+            dgvTabKN.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabKN.Location = new Point(3, 82);
+            dgvTabKN.Name = "dgvTabKN";
+            dgvTabKN.RowHeadersWidth = 62;
+            dgvTabKN.Size = new Size(1016, 381);
+            dgvTabKN.TabIndex = 4;
+            // 
+            // tabPageHoanTat
+            // 
+            tabPageHoanTat.Controls.Add(btnTabHT);
+            tabPageHoanTat.Controls.Add(txtTabHT);
+            tabPageHoanTat.Controls.Add(dgvTabHT);
+            tabPageHoanTat.Location = new Point(4, 70);
+            tabPageHoanTat.Name = "tabPageHoanTat";
+            tabPageHoanTat.Size = new Size(1022, 448);
+            tabPageHoanTat.TabIndex = 10;
+            tabPageHoanTat.Text = "Hoàn tất";
+            tabPageHoanTat.UseVisualStyleBackColor = true;
+            // 
+            // btnTabHT
+            // 
+            btnTabHT.BackColor = Color.FromArgb(128, 128, 255);
+            btnTabHT.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTabHT.ForeColor = Color.White;
+            btnTabHT.Location = new Point(467, 13);
+            btnTabHT.Name = "btnTabHT";
+            btnTabHT.Size = new Size(136, 43);
+            btnTabHT.TabIndex = 6;
+            btnTabHT.Text = "Tìm kiếm";
+            btnTabHT.UseVisualStyleBackColor = false;
+            // 
+            // txtTabHT
+            // 
+            txtTabHT.ForeColor = Color.Gray;
+            txtTabHT.Location = new Point(32, 17);
+            txtTabHT.Name = "txtTabHT";
+            txtTabHT.Size = new Size(385, 34);
+            txtTabHT.TabIndex = 5;
+            txtTabHT.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvTabHT
+            // 
+            dgvTabHT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTabHT.Location = new Point(3, 82);
+            dgvTabHT.Name = "dgvTabHT";
+            dgvTabHT.RowHeadersWidth = 62;
+            dgvTabHT.Size = new Size(1016, 381);
+            dgvTabHT.TabIndex = 4;
+            // 
+            // btnDTD
+            // 
+            btnDTD.BackColor = Color.FromArgb(128, 128, 255);
+            btnDTD.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDTD.ForeColor = Color.White;
+            btnDTD.Location = new Point(467, 13);
+            btnDTD.Name = "btnDTD";
+            btnDTD.Size = new Size(136, 43);
+            btnDTD.TabIndex = 6;
+            btnDTD.Text = "Tìm kiếm";
+            btnDTD.UseVisualStyleBackColor = false;
+            // 
+            // txtDTD
+            // 
+            txtDTD.ForeColor = Color.Gray;
+            txtDTD.Location = new Point(32, 17);
+            txtDTD.Name = "txtDTD";
+            txtDTD.Size = new Size(385, 34);
+            txtDTD.TabIndex = 5;
+            txtDTD.Text = "Nhập mã đơn hàng";
+            // 
+            // dgvDTD
+            // 
+            dgvDTD.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDTD.Location = new Point(3, 82);
+            dgvDTD.Name = "dgvDTD";
+            dgvDTD.RowHeadersWidth = 62;
+            dgvDTD.Size = new Size(1016, 363);
+            dgvDTD.TabIndex = 4;
             // 
             // FormQuanLyDonHang
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1141, 668);
-            Controls.Add(groupBox1);
+            Controls.Add(groupBoxQuanLyDonHang);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "FormQuanLyDonHang";
             Text = "FormQuanLyDonHang";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            tabControl1.ResumeLayout(false);
-            tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBoxQuanLyDonHang.ResumeLayout(false);
+            groupBoxQuanLyDonHang.PerformLayout();
+            tabControlQuanLyDonHang.ResumeLayout(false);
+            tabPageDonHangTimKiem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvDonHangTimKiem).EndInit();
+            tabPageDaTaoDon.ResumeLayout(false);
+            tabPageDaTaoDon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDXL).EndInit();
+            tabPageDangXuLy.ResumeLayout(false);
+            tabPageDangXuLy.PerformLayout();
+            tabPageDangVanChuyen.ResumeLayout(false);
+            tabPageDangVanChuyen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDVC).EndInit();
+            tabPageDangGiaoHang.ResumeLayout(false);
+            tabPageDangGiaoHang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDGH).EndInit();
+            tabPageDaGiaoHang.ResumeLayout(false);
+            tabPageDaGiaoHang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabDaGH).EndInit();
+            tabPageTraHang.ResumeLayout(false);
+            tabPageTraHang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabTH).EndInit();
+            tabPageKhieuNai.ResumeLayout(false);
+            tabPageKhieuNai.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabKN).EndInit();
+            tabPageHoanTat.ResumeLayout(false);
+            tabPageHoanTat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTabHT).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDTD).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private Button button1;
-        private TextBox textBox1;
-        private TabControl tabControl1;
-        private TabPage tabPage4;
-        private TabPage tabPage5;
-        private TabPage tabPage6;
-        private TabPage tabPage7;
-        private TabPage tabPage3;
-        private DataGridView dataGridView1;
+        private GroupBox groupBoxQuanLyDonHang;
+        private TabControl tabControlQuanLyDonHang;
+        private TabPage tabPageDonHangTimKiem;
+        private TabPage tabPageDangXuLy;
+        private TabPage tabPageDaTaoDon;
+        private TabPage tabPageDangVanChuyen;
+        private TabPage tabPageDangGiaoHang;
+        private TabPage tabPageDaGiaoHang;
+        private TabPage tabPageTraHang;
+        private TabPage tabPageKhieuNai;
+        private TabPage tabPageDaHoanHang;
+        private TabPage tabPageHoanTat; 
+        private DataGridView dgvTabDVC;
+        private DataGridView dgvTabKN;
+        private DataGridView dgvDonHangTimKiem;
+        private DataGridView dgvTabDXL;
+        private DataGridView dgvTabHT;
+        private DataGridView dgvTabDGH;
+        private DataGridView dgvTabTH;
+        private DataGridView dgvTabDaGH;
+        private Button btnTabDXL;
+        private Button btnTimKiem;
+        private Button btnTabDVC;
+        private Button btnTabDGH;
+        private Button btnTabDaGH;
+        private Button btnTabTH;
+        private Button btnTabKN;
+        private Button btnTabHT;
+        private Button btnKhieuNai;
+        private Button btnHuyDonHang;
+        private TextBox txtTabDXL;
+        private TextBox txtTabKN;
+        private TextBox txtTabHT;
+        private TextBox txtTabDVC;
+        private TextBox textBoxTabDXL;
+        private TextBox txtNhapMaDonHang;
+        private TextBox txtTabDGH;
+        private TextBox txtTabDaGH;
+        private TextBox txtTabTH;
+        private Button btnDTD;
+        private TextBox txtDTD;
+        private DataGridView dgvDTD;
     }
 }
