@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\C#DotNet\\pttkht\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj": {}
+    "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj": {}
   },
   "projects": {
-    "D:\\code\\C#DotNet\\pttkht\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj": {
+    "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\C#DotNet\\pttkht\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj",
         "projectName": "QuanlyGiaoVan",
-        "projectPath": "D:\\code\\C#DotNet\\pttkht\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj",
+        "projectPath": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\QuanlyGiaoVan.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\C#DotNet\\pttkht\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\phantichTKHT\\Nhanh.ship_Fake\\QuanlyBDS\\QuanlyGiaoVan\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -82,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

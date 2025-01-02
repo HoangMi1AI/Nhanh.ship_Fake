@@ -275,6 +275,8 @@ namespace QuanlyGiaoVan
             panel1.Visible = false;
         }
 
+
+
         //private async void test_Click(object sender, EventArgs e)
         //{
         //    var ghnService = new GHNService();
